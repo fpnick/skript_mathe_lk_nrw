@@ -1,0 +1,631 @@
+$\rightarrow$ geometrische Beziehungen und Sachverhalte arithmetisch erfasst und untersucht.
+
+\section{Einführung des Vektorbegriffs}
+Ein Vektor im geometrischen Sinne ist eine Art "`Abbildung"' von einem Punkt zum andern.\\
+Name eines Vektors (Pfeils): 
+\[ \vec{PP'} = \vec{a} \]
+Pfeil $\Rightarrow$ Pfeilklasse = Vektor\\
+
+Vektoren unterscheiden sich durch:
+\begin{itemize}
+	\item unterschiedliche Richtung
+	\item unterschiedliche Orientierung
+	\item unterschiedliche Länge
+\end{itemize}
+
+Weitere Definitionen:
+\begin{itemize}
+	\item Länge eines Vektors $ |\vec{a}| = |-\vec{a}|$
+	\item $\vec{PP} = \vec{0}$ Nullvektor mit $\vec{a} + \vec{0} = \vec{a}$
+	\item $\vec{a} = \vec{b} \Leftrightarrow $ $\vec{a}$ und $\vec{b}$ haben dieselbe Länge, dieselbe Orientierung und dieselbe Richtung.
+\end{itemize}
+
+\section{Vektoraddition}
+Vektoren werden addiert, indem man den Schaft des zweiten Vektors an die Spitze des ersten Vektors legt. Der \emph{resultierende} Vektor hat dann den Schaft des ersten Vektors und die Spitze in der Spitze des zweiten Vektors.
+\subsection{Länge von Summenvektoren}
+\begin{tabular}{lcl}
+$\vec{a} \uparrow \uparrow \vec{b}$ & : & $|\vec{a} + \vec{b}| = |\vec{a}| + |\vec{b}|$ \\
+$\vec{a} \uparrow \downarrow \vec{b}$ & : & $|\vec{a} + \vec{b}| = ||\vec{a}| - |\vec{b}|| \leq  |\vec{a}| + |\vec{b}|$ \\
+$\vec{a} / / \vec{b}$ & : & $|\vec{a} + \vec{b}| \leq |\vec{a}| + |\vec{b}|$ (\emph{Dreiecksungleichung})
+\end{tabular}
+
+\section{Skalarmultiplikation}
+\label{Skalarmultiplikation}
+\begin{definition}[Skalar] Unter einem \textbf{Skalar} versteht man i.d.R. eine reelle Zahl. \end{definition}
+\subsection{Gesetze zur Skalarmultiplikation}
+Für alle $\lambda, \mu \in \mathbb{R}$ und alle $\vec{a}, \vec{b} \in V$ (V = Vektorraum. siehe unten.) gilt:\\
+\begin{itemize}
+	\item $\lambda \cdot (\mu \cdot \vec{a}) = (\lambda \mu) \cdot \vec{a}$
+	\item $(\mu + \lambda) \cdot \vec{a} = \mu \vec{a} + \lambda \vec{a}$
+	\item $ \lambda (\vec{a} + \vec{b}) = \lambda \vec{a} + \vec{b}$
+	\item $ \lambda \vec{0} = \vec{0}$
+	\item $ \lambda \vec{a} = 0 \Leftrightarrow \lambda = 0 \lor \vec{a} = 0$\\
+\end{itemize}
+
+\section{Vekorräume (LK)}
+\label{Vraum}\begin{definition}[Vektorraum] Eine nicht leere Menge $V$ nennt man einen \textbf{Vektorraum} und ihre Elemente \textbf{Vektoren}, wenn
+\begin{enumerate}
+	\item es eine "`Addition"' gibt, die Elementen $\vec{a}, \vec{b} \in V$ jeweils genau ein Element $\vec{a} + \vec{b} \in V$ zuordnet, und hierbei gilt:
+	\begin{enumerate}
+		\item Es gibt ein "`Nullelement"' $\vec{0} \in V$ mit $\vec{a} + \vec{0} = \vec{a}$ für alle $\vec{a} \in V$
+		\item Zu jedem $\vec{a} \in V$ gibt es ein "`Gegenelement"' $-\vec{a} \in V$ mit $\vec{a} + (-\vec{a}) = \vec{0}$
+		\item Für alle $\vec{a}, \vec{b}, \vec{c} \in V$ gilt $\vec{a} + (\vec{b} + \vec{c}) = (\vec{a} + \vec{b}) + \vec{c}$ (Assoziativgesetz)
+		\item Für alle $\vec{a}, \vec{b} \in V$ gilt: $\vec{a} + \vec{b} = \vec{b} + \vec{a}$ (Kommutativgesetz)
+	\end{enumerate}
+	\item es eine "`Multiplikation"' gibt, die jeweils einer reellen Zahl $\lambda$ und einem Element $\vec{a} \in V$ genau ein Element $\lambda \cdot \vec{a} \in V$ zuordnet und hierbei gilt:
+	\begin{enumerate}
+	\item Für alle $\lambda \in \mathbb{R}$, $\vec{a}, \vec{b} \in V$ gilt: $\lambda \cdot (\vec{a} + \vec{b}) = \lambda \vec{a} + \lambda \vec{b}$ und für alle $\lambda, \mu \in \mathbb{R}$, $\vec{a} \in V$ gilt: $(\lambda + \mu) \cdot \vec{a} = \lambda \vec{a} + \mu \vec{a}$. (Distributivgesetze)
+	\item Für alle $\lambda, \mu \in \mathbb(R)$, $\vec{a} \in V$ gilt: $\lambda \cdot (\mu \cdot \vec{a}) = (\lambda \cdot \mu) \cdot \vec{a}$. (Assoziativgesetz)
+	\item Für alle $\vec{a} \in V$ gilt: $ 1 \cdot \vec{a} = \vec{a}$.
+\end{enumerate}
+\end{enumerate}
+\end{definition}
+
+\section{Vektorketten}
+\begin{definition}[Vektorkette] Die Summe aus endlich vielen Vektoren heißt \textbf{Vektorkette}.\end{definition}
+
+Offene Vektorkette: $ \vec{a} + \vec{c} + \vec{d} = \vec{x}$ \\
+Geschlossene Vektorkette: $\vec{a} + \vec{c} + \vec{d} = \vec{0}$\\
+Jede offene Vektorkette lässt sich schließen, indem man den Gegenvektor des resultierenden Vektors addiert: $\vec{a} + \vec{c} + \vec{d} + (-\vec{x}) = \vec{0}$
+
+\section{Linearkombinationen}
+\begin{definition}[Linearkombination]
+\[ \lambda_1 \vec{a_1} + \lambda_2 \vec{a_2} + \ldots + \lambda_n \vec{a_n} = \vec{x}\]
+mit $\lambda_1, \ldots, \lambda_n \in \mathbb{R}$ und $\vec{a_1}, \ldots, \vec{a_n} \in \mathbb{R}$ heißt Linearkombination aus den Vektoren $\vec{a_1}, \ldots, \vec{a_n}$\\
+Oder anders: 
+\[ \vec{x} = \sum \limits_{i=1} ^{n} {\lambda_i a_i}\]
+\end{definition}
+
+\section{Vektorräume (Beispiele) (LK)}
+Ebene $\mathbb{R}^2$ \\
+Raum $\mathbb{R}^3$ \\
+
+\textbf{Ebene}: \\
+$P (P_1 | P_2)$ \\
+Ortsvektor zu P: $ \vec{0p} = \vec{p} = \left( \begin{array}{cc} p_1 \\ p_2 \end{array} \right)$ \\
+\[ \mathbb{R}^2 = \{ \left( \begin{array}{c} x_1 \\ x_2 \end{array} \right) | x_1 , x_2 \in \mathbb{R} \} \] 
+ist ein Vektorraum.\\
+
+\textbf{Raum}: \\
+$P (P_1 | P_2 | P_3)$ \\
+$x_1$-$x_2$ - Ebene\\
+$x_2$-$x_3$-Ebene\\
+$x_1$-$x_3$-Ebene\\
+Ortsvektor zu P: $ \vec{0p} = \vec{p} = \left( \begin{array}{c} p_1 \\ p_2 \\ p_3 \end{array} \right)$ \\
+\[ \mathbb{R}^3 = \{ \left( \begin{array}{c} x_1 \\ x_2 \\x_3 \end{array} \right) | x_1 , x_2 , x_3 \in \mathbb{R} \} \] 
+ist ein Vektorraum.\\
+
+Allgemein (\textbf{n-Tupel}): \\
+\[ \mathbb{R}^n = \{ \left( \begin{array}{c} x_1 \\ x_2 \\ \vdots \\ x_n \end{array} \right) | x_1 , x_2 , \ldots , x_n \in \mathbb{R} \} \] 
+ist ein Vektorraum. (wobei $n \in \mathbb{N}$)\\
+
+\begin{definition}[Addition im $\mathbb{R}^n$]
+Seien $\vec{a} = \left( \begin{array}{c} a_1 \\ a_2 \\ \vdots \\ a_n \end{array} \right), \vec{b} = \left( \begin{array}{c} b_1 \\ b_2 \\ \vdots \\ b_n \end{array} \right) \in \mathbb{R}^n$. Dann gilt: $\vec{a} + \vec{b} = \left( \begin{array}{c} a_1 + b_1 \\ a_2 + b_2 \\ \vdots \\ a_n + b_n \end{array} \right)$
+\end{definition}
+
+\begin{definition}[Skalarmultiplikation im $\mathbb{R}^n$]
+Seien $ \lambda \in \mathbb{R}, \vec{v} \in \mathbb{R}^n$. Dann gilt: $\lambda \vec{v} = \lambda \left( \begin {array}{c} v_1 \\ v_2 \\ \vdots \\ v_n \end{array} \right) = \left( \begin {array}{c} \lambda v_1 \\ \lambda v_2 \\ \vdots \\ \lambda v_n \end{array} \right)$
+\end{definition}
+
+\begin{beweis}[$\mathbb{R}^n$ ist ein Vektorraum.]
+Zu beweisen sind die Axiome aus Definition \ref{Vraum}.1. In diesem Fall größtenteils sehr einfach und daher hier ausgelassen.
+\end{beweis}
+
+\textbf{Länge von Elementen des $\mathbb{R}^n$.}\\
+Sei $\vec{a} \in \mathbb{R}^n \Rightarrow |\vec{a}| = \sqrt{ \sum _{i=1} ^{n} a_i ^2}$
+
+\section{Untervektorräume (LK)}
+ \begin{bsp} Sei $U= \{ \left( \begin{array}{c} u_1 \\ u_2 \\ 0 \end{array} \right) | u_1 , u_2 \in \mathbb{R} \} \subset \mathbb{R}^n$ ein Vektorraum ($x_1$-$x_2$ - Ebene). Wir sagen: $U$ ist ein Untervektorraum des $\mathbb{R}^n$. \end{bsp}
+
+\section{Lineare Abhängigkeit und Unabhängigkeit von Vektoren}
+\label{l.u.}
+\begin{definition}[Lineare Unabhängigkeit] Vektoren heißen \textbf{linear abhängig} (l.a.), wenn mindestens ein Vektor sich als Linearkombination der anderen Vektoren darstellen lässt. Sie heißen \textbf{linear unabhängig}, wenn es keine mögliche Linearkombination gibt.\\
+Anders: Wenn gilt \[\lambda_1 \vec{v_1} + \lambda_2 \vec{v_2} + \ldots + \lambda_n \vec{v_n} = \vec{0} \Rightarrow \lambda_1, \ldots, \lambda_n = 0\] dann heißen $\vec{v_1}, \ldots, \vec{v_n}$ \textbf{linear unabhängig}.
+\end{definition}
+
+Um dies zu überprüfen, löst man ein LGS. Ist der Lösungsvektor der Nullvektor, so sind die Vektoren \textbf{linear unabhängig}.
+
+\subsection{Folgerungen}
+\begin{enumerate}
+	\item drei oder mehr Vektoren im $\mathbb{R}^2$ sind stets l.a.
+	\item vier oder mehr Vektoren im $\mathbb{R}^3$ sind stets l.a.
+	\item nimmt man einen von mehreren l.u. Vektoren weg, so sind die restlichen immer noch l.u.
+	\item ergänzt man eine Menge l.a. Vektoren durch einen weiteren Vektor, so sind dieser immer noch l.a.
+\end{enumerate}
+
+\section{Erzeugendensystem (LK)}
+\begin{definition}[Erzeugendensystem] Falls eine Menge von Vektoren es ermöglicht, alle anderen Vektoren eines Vektorraums als Linearkombination darzustellen, so heißt die Menge \textbf{Erzeugendensystem} des Vektorraums. Man sagt: Diese Menge erzeugt den Vektorraum.
+\end{definition}
+
+\subsection{Basen (LK)}
+\begin{definition}[Basis] \textbf{Basis} eines Vektorraums nennt man ein Erzeugendensystem mit minimal notwendigen, l.u. Vektoren.\\
+d.h.: $\mathbb{R}^n \rightarrow \dim \mathbb{R}^n = n$\\
+($\dim V$ = Dimension = Anzahl der Elemente in einer Basis des Vektorraums)\\
+Standardbasis des $\mathbb{R}^n$:
+\[ \mathbb{B} = \{ \left( \begin{array}{c} 1 \\ 0 \\ 0 \\ \vdots \\ 0 \end{array} \right), \left( \begin{array}{c} 0 \\ 1 \\ 0 \\ \vdots \\ 0 \end{array} \right), \ldots, \left( \begin{array}{c} 0 \\ 0 \\ 0 \\ \vdots \\ 1 \end{array} \right) \} \]
+\end{definition}
+
+\section{Teilungsverhältnisse}
+Hier behandeln wir das Berechnen von Teilungsverhältnissen in geometrischen Figuren.
+\begin{enumerate}
+	\item Geschlossene Vektorkette aufstellen, die Teilungspunkt $T$ und gesuchte Teilstrecken enthält.
+	\item Alle benötigten Vektoren als Linearkombination der Basisvektoren ausdrücken.
+	\item Ordnen nach $\vec{a}$ und $\vec{b}$ (ggf. $\vec{c}$ usw.).
+	\item Da $\vec{a}$ und $\vec{b}$ l.u. sind, müssen die Terme der Koeffizienten von $\vec{a}$ und $\vec{b}$ = 0 sein.
+	\item LGS lösen.
+\end{enumerate}
+
+\section{Geraden in vektorieller Darstellung}
+Bisher im $\mathbb{R}^2$: $y = mx + n$ \\
+
+\begin{tabular}{|l|l|}
+\hline
+2-Punkte Form & Punkt-Steigungs-Form \\
+$P(p_1, p_2)$, $Q(q_1, q_2)$ & $P(p_1, p_2)$ \\
+$m = \frac{\Delta y}{\Delta x}$ & $m \in \mathbb{R}$ \\
+\hline
+\end{tabular}
+\\
+\\
+\textbf{In vektorieller Darstellung:} \\
+Gegeben: Punkte P und Q \\
+Liegt $\vec{x}$ auf der Geraden, so gilt: $\vec{0x} = \vec{p} + \vec{Px} = \vec{p} + \lambda \vec{pq}; \lambda \in \mathbb{R}$, also auch $\vec{0x} = \vec{p} + \lambda (\vec{q} - \vec{p}); \lambda \in \mathbb{R}$ \\
+Daraus folgt die "`2-Punkte-Form"' einer Geradengleichung in Parameterform
+\begin{align*}
+ g: \vec{x} = \vec{p} + \lambda (\vec{q} - \vec{p}); \lambda \in \mathbb{R}
+\end{align*}
+
+und die "`Punkt-Richtungs-Form"' einer Geradengleichung in Parameterform
+\begin{align*}
+ g: \vec{x} = \vec{p} + \lambda \vec{u}; \lambda \in \mathbb{R}
+\end{align*}
+
+\textbf{Bezeichnungen:}
+\begin{itemize}
+	\item $\vec{p}$ nennt man \textbf{Stützvektor}
+	\item $\vec{u}$ nennt man \textbf{Richtungsvektor}
+\end{itemize}
+
+\textbf{Beachte:}
+\begin{itemize}
+	\item Jedes Vielfache des Richtungsvektors ist auch ein Richtungsvektor
+	\item $\vec{u} = \vec{p}-\vec{q}$ oder $\vec{u} = \vec{q}-\vec{p}$
+\end{itemize}
+
+\textbf{Was leistet die vektorielle Darstellung einer Geraden?}
+\begin{itemize}
+	\item Punkttest
+	\item Lagebeziehungen und Schnittpunkte
+	\item Überführung in $ y = mx + n$
+\end{itemize}
+
+\subsection{Umformen von vektorieller Darstellung in skalare Darstellung}
+Sei $\left( \begin{array}{c} x_1 \\ x_2 \end{array} \right) = \left( \begin{array}{c} p_1 \\ p_2 \end{array} \right) + \lambda \left( \begin{array}{c} u_1 \\ u_2 \end{array} \right)$
+\begin{align*}
+\Leftrightarrow x_1 = p_1 + \lambda u_1 \Rightarrow \lambda = \frac{x_1 - p_1}{u_1} \forall u_1 \neq 0 \\
+\land x_2 = p_2 + \lambda u_2
+\end{align*}
+
+einsetzen:
+\begin{align*}
+x_2 = p_2 + \frac{x_1 - p_1}{u_1} \cdot u_2 = p_2 + x_1 \cdot \frac{u_2}{u_1} - \frac{p_1 \cdot u_2}{u_1}
+\end{align*}
+
+Also
+\begin{align*}
+x_2 = \frac{u_2}{u_1} x_1 + p_2 - \frac{u_2}{u_1} p_1 
+\end{align*}
+
+\subsection{Lagebeziehungen von Geraden in der Ebene}
+$g: \vec{x} = \vec{p} + \lambda \vec{u}; \lambda \in \mathbb{R} $ \\
+$g: \vec{x} = \vec{q} + \mu \vec{v}; \mu \in \mathbb{R}$ \\
+
+\begin{tabular}{c|c}
+parallel & schneiden sich \\
+\begin{tabular}{c|c} identisch & echt parallel \end{tabular} & \begin{tabular}{c|c} $g \cap h$ & $g \bot h$ \end{tabular}
+\end{tabular}
+
+\begin{enumerate}
+	\item Untersuchung von $\vec{u}$ und $\vec{v}$ auf lineare Abhängigkeit: $\vec{u} = \nu \vec{v}$ \\
+	falls Gleichung wahr $\rightarrow$ parallel \\
+	sonst $\rightarrow$ schneiden sich
+	\item falls parallel: Punkttest erforderlich: $\vec{p} \in h \lor \vec{q} \in g$ \\
+	falls wahr $\rightarrow$ identisch \\
+	sonst $\rightarrow$ parallel
+	\item \textsl{(vorgezogen)} falls Schnittpunkt: Prüfen, ob $\vec{u} \bot \vec{v} \Leftrightarrow \vec{u} \cdot \vec{v} = 0$ \\
+	falls wahr $\rightarrow$ senkrecht \\
+	sonst $\rightarrow$ schneiden sich nicht senkrecht
+\end{enumerate}
+
+\subsection{Lagebeziehungen von Geraden im Raum}
+$g: \vec{x} = \vec{a} + \lambda \vec{u}; \lambda \in \mathbb{R} $ \\
+$g: \vec{x} = \vec{b} + \mu \vec{v}; \mu \in \mathbb{R}$ \\
+\quad \\
+\textbf{1. Schritt} Untersuchen von $\vec{u}$ und $\vec{v}$ auf lineare Abhängigkeit \\
+\begin{tabular}{c|c}
+$\vec{u}$ und $\vec{v}$ sind l.a. & $\vec{u}$ und $\vec{v}$ sind l.u. \\
+\begin{tabular}{c|c} $g || h \land g \neq h$ & $g \equiv h$ \end{tabular} & \begin{tabular}{c|c} $g \cap h = \{S\}$ schneiden sich & $g\cap h = \{\}$ windschief \end{tabular}
+\end{tabular}
+\quad \\
+\textbf{2. Schritt:}\\
+\begin{tabular}{c|c}
+$\vec{u}$ und $\vec{v}$ sind l.a. & $\vec{u}$ und $\vec{v}$ sind l.u. \\
+Setze $\vec{b}$ in $g$ oder $\vec{a}$ in $h$ & Untersuchung auf Schnittpunkte: $\vec{a} + \lambda \vec{u} = \vec{b} + \mu \vec{v}$ \\
+falls positiv: $g \equiv h$ & EINE Lösung: $S$ berechnen durch Einsetzen. \\ 
+falls negativ: $g || h \land g \neq h$ & KEINE Lösung: $g$ und $h$ windschief. 
+\end{tabular} 
+
+\section{Das Standard Skalarprodukt}
+Das (Standard) Skalarprodukt im $\mathbb{R}^n$ wird definiert durch
+\[ \vec{a} \cdot \vec{b} = \sum \limits_{i = 1} ^{n} a_i b_i \]
+woraus direkt folgt $\vec{a} \cdot \vec{a} = \vec{a}^2 = \sum \limits_{i = 1} ^{n} a ^2 _i = |\vec{a}|^2$
+
+\subsection{Geometrische Deutung des Skalarprodukts}
+\label{geomsprod}
+gegeben: $\vec{a}$, $\vec{b}$ aus $\mathbb{R}^n$ \\
+Dann gilt wegen des Kosinussatzes\\
+\begin{align}
+| \vec{b} - \vec{a} | ^2 &= | \vec{a} | ^2 + | \vec{b} | ^2 - 2 | \vec{a} | | \vec{b} | \cos{\gamma}\\
+(\vec{b} - \vec{a})^2 &= \vec{b}^2 + \vec{a}^2 - 2 \vec{a} \vec{b}
+\end{align}
+Daher folgt
+\begin{align}
+ \vec{a} \cdot \vec{b} = |\vec{a}| \cdot |\vec{b}| \cdot \cos(\angle \vec{a}, \vec{b})
+\end{align}
+ 
+\subsection{Anwendungen des Skalarprodukts}
+\label{appsprod}
+\begin{itemize}
+	\item Winkelberechnung zwischen zwei Vektoren (siehe \ref{geomsprod})
+	\item Winkel zwischen zwei Geraden in $\mathbb{R}^2$ und $\mathbb{R}^3$ (siehe \ref{geomsprod})
+	\item Beweise von elementargeometrischen Sätzen
+	\item Finden eines orthogonalen Vektors ($\vec{a}_{\bot}$) zu einem Vektor $\vec{a}$
+	\item Finden des normierten Vektors ($\vec{a}_0$) zu einem Vektor $\vec{a}$
+\end{itemize}
+
+\subsubsection{Orthogonale Vektoren $\vec{a}_{\bot}$}
+Aus \ref{geomsprod} folgt:
+\[\vec{a} \cdot \vec{b} = 0 \Leftrightarrow \vec{a} \bot \vec{b} \]
+in $\mathbb{R}^2$:
+\[\vec{a} = \left( \begin{array}{c} a_1 \\ a_2 \end{array}\right) \rightarrow a_{\bot} = \left(\begin{array}{c} -a_2 \\ a_1 \end{array}\right) \lor a_{\bot} = \left(\begin{array}{c} a_2 \\ -a_1 \end{array}\right) \]
+in $\mathbb{R}^3$: Eine Komponente des Vektors =0 setzen, die anderen vertauschen und einen von beiden mit (-1) multiplizieren.
+
+\subsubsection{Normierte Vektoren $\vec{a}^0$}
+\begin{definition}[Normierter Vektor] Ein normierter Vektor $\vec{a}^0$ hat den Betrag 1.\\
+Also:
+\[ \vec{a}^0 = \frac{\vec{a}}{|\vec{a}|} \]
+\end{definition}
+
+\subsection{Eigenschaften des Skalarprodukts}
+\begin{itemize}
+	\item Kommutativgesetz: $\vec{a} \cdot \vec{b} = \vec{b} \cdot \vec{a}$\\
+	\begin{beweis}: Seien $\vec{a}, \vec{b} \in \mathbb{R}^n$\\
+	$\vec{a} \cdot \vec{b} = \sum _{i = n} ^{n} {a_i b_i} =  \sum _{i = n} ^{n} {b_i a_i} = \vec{b} \cdot \vec{a}$ 			\end{beweis}
+	\item Distributivgesetz: $\vec{a} \cdot (\vec{b} + \vec{c}) = \vec{a}\vec{b} + \vec{a}\vec{c}$\\
+	\begin{beweis}: Seien $\vec{a}, \vec{b}, \vec{c} \in \mathbb{R}^n$\\
+	$\vec{a} \cdot (\vec{b} + \vec{c}) = \sum _{i=1} ^n a_i (b_i + c_i) = \sum _{i=1} ^n a_i b_i + a_i c_i = \sum _{i=1} ^n a_i b_i + \sum _{i=1} ^n a_i c_i = \vec{a}\vec{b} + \vec{a}\vec{c}$ \end{beweis}
+	\item $\lambda\vec{a} \cdot \mu\vec{b} = \lambda \mu (\vec{a} \cdot \vec{b})$
+\end{itemize}
+
+\section{Projektionsvektoren (LK)}
+\begin{definition}[Projektionsvektoren] Unter dem \textbf{Projektionsvektor} $\vec{b_a}$ verstehen wir den Vektor, dessen Vertreter man durch senkrechte Projektion eines Vertreters von $\vec{b}$ in Richtung eines Vertreters von $\vec{a}$ erhält.
+\end{definition}
+
+Es gilt: $|\vec{b_a}| = |\vec{b}| \cdot |\cos({\angle \vec{b}, \vec{a}})|$ \\
+
+\begin{satz}[Projektionsvektoren]
+\[\vec{a} \cdot \vec{b} = \vec{a} \cdot \vec{b_a} \]
+\end{satz}
+
+\section{Abstand zwischen einem Punkt und einer Geraden}
+\label{lotfusspunkt}
+Der Abstand zwischen einem Punkt $P$ und einer Geraden $g$ ist die Länge des Vektors, der senkrecht auf der Geraden $g$ steht, und durch den Punkt $P$ verläuft. Mithilfe des Skalarprodukts können wir den Lotpunkt $B$ berechnen (beachte: er liegt auf der Geraden $g$ und das Skalarprodukt des Richtungsvektors der Geraden und des Vektors $\vec{BP}$ ist gleich null!) und anschließend die Länge des Vektors $\vec{BP}$ berechnen. 
+
+\subsection{Lotfußpunkt-Verfahren}
+\begin{center}
+\begin{figure}[htb]
+\includegraphics[scale=0.5]{abbildungen/lotfusspunkt.jpeg}
+\end{figure}
+\end{center}
+Das Lotfußpunkt-Verfahren wird verwendet, um den Abstand eines Punktes von einer Geraden zu bestimmen.\\
+
+Sei $g: \vec{x} = \vec{z} + \lambda \vec{u}$; $\lambda \in \mathbb{R}$ eine Gerade im $\mathbb{R}^3$ und $P$ ein Punkt.\\
+
+\textbf{Definition:} Als \emph{Abstand} zwischen einem Punkt und einer Geraden bezeichnen wir die Länge der kürzesten Strecke zwischen den beiden.\\
+
+Vektoriell gesehen bedeutet das, dass der Abstand des Punktes von der Geraden die Länge desjenigen Vektors $\vec{a}$ ist, der senkrecht auf der Geraden steht und auf den Punkt $P$ zeigt.
+Der Punkt $B$, an dem der Vektor senkrecht auf der Geraden steht wird \emph{Lotfußpunkt} von $P$ auf $g$ genannt.\\
+
+Wir wissen:
+\begin{align}
+d(g, P) &= |\vec{a}|\\
+&=|\vec{p}-\vec{b}| \label{GL2}
+\end{align} 
+Vom Vektor $\vec{b}$, dem Ortsvektor zum Punkt $B$, kennen wir folgende Eigenschaften:
+\begin{align}
+\vec{b} &\in g \\
+(\vec{p} - \vec{b}) \cdot \vec{u} = 0 &\Leftrightarrow (\vec{p} - \vec{b}) \bot \vec{u} \label{Eig2}
+\end{align}
+Da $\vec{b} \in g$ können wir die Geradengleichung in \ref{Eig2} einsetzen:
+\begin{align}
+(\vec{p} - (\vec{z} + \lambda \vec{u})) \cdot \vec{u} &= 0 \label{GL5}
+\end{align}
+für ein bestimmtes $\lambda \in \mathbb{R}$\\
+\ref{GL5} liefert eine Gleichung mit einer Unbekannten. Löst man diese Gleichung erhält man für $\lambda$:
+\begin{align}
+\lambda &= \frac{p_1 u_1 - z_1 u_1 + p_2 u_2 - z_2 u_2 + p_3 u_3 - z_3 u_3}{(u_1)^2 + (u_2)^2 + (u_3)^2}
+\end{align}
+Dies nachzurechnen sei dem Leser überlassen. Im Folgenden verwenden wir der Übersichtlichkeit halber weiter $\lambda$.\\
+Mithilfe dieses bestimmten $\lambda$ lässt sich nun der Ortsvektor $\vec{b}$ und somit der Punkt $B$ bestimmen, womit das Problem auf eine Abstandsbestimmung zwischen zwei Punkten zurückgeführt wurde. Hierzu setzen wir das gerade errechnete $\lambda$ in die Geradengleichung ein.
+\begin{align}
+\vec{b} = \vec{z} + \lambda \vec{u}
+\end{align}
+Nach \ref{GL2} gilt nun:
+\begin{align*}
+d(g, P) &= |\vec{p} - \vec{z} -\lambda \vec{u}|\\
+&=\sqrt{(p_1 -z_1 -\lambda u_1)^2 + (p_2 - z_2 -\lambda u_2)^2 + (p_3 -z_3 -\lambda u_3)^2}
+\end{align*} \\
+womit der gesuchte Abstand durch Einsetzen der gegebenen Komponenten und Berechnung des Betrages zu berechnen ist.\\
+
+\section{Ebenen in vektorieller Darstellung}
+Eine Ebene wird definiert durch einen \textbf{Stützvektor} ($\vec{a})$ und zwei linear unabhängige \textbf{Spannvektoren} ($\vec{u}$ und $\vec{v}$).
+\[ E: \vec{x} = \vec{a} + \lambda \vec{u} + \mu \vec{v}; \lambda, \mu \in \mathbb{R} \]
+
+\textbf{Was leistet die vektorielle Darstellung einer Ebene?}\\
+\begin{itemize}
+	\item Punkttest
+	\item Parameterfreie Darstellung
+	\item Achsenschnittpunkte einer Ebene
+	\item Lagebeziehungen
+\end{itemize}
+
+\section{Spurgeraden und Spurpunkte}
+\label {spur}
+\begin{definition}[Spurgeraden und Spurpunkte] Die drei Geraden, die durch die drei Schnittpunkte einer Ebene mit den kartesischen Achsen definiert sind, nennt man Spurgeraden.\\
+Die Schnittpunkte einer Geraden mit den kartesischen Ebenen nennt man Spurpunkte.
+\end{definition}
+
+\section{Lagebeziehungen Ebene - Gerade im Raum}
+Mögliche Lagebeziehungen zwischen einer Ebene und einer Geraden im $\mathbb{R}^3$: \\
+\begin{enumerate}
+	\item $E \cap g = \{ \} \Leftrightarrow E || g$
+	\item $E \cap g = \{ S \}$
+	\item $E \cap g = g \Leftrightarrow g \subset E$
+\end{enumerate}
+
+Lösung: Parameterform der Geraden und Parameterform der Ebene gleichsetzen.\\
+Mögliche Fälle:\\
+\begin{enumerate}
+	\item keine Lösung $\Leftrightarrow E || g$
+	\item eine eindeutige Lösung $\Leftrightarrow E \cap g = \{ S \}$
+	\item unendlich viele Lösungen $\Leftrightarrow E \cap g = g$
+\end{enumerate}
+
+\section{Lagebeziehungen Ebene - Ebene im Raum (ohne NF)}
+Mögliche Lagebeziehungen zwischen zwei Ebenen im $\mathbb{R}^3$: \\
+\begin{enumerate}
+	\item $E_1 \cap E_2 = \{ \} \Leftrightarrow E_1 || E_2$
+	\item $E_1 \cap E_2 = g_s$
+	\item $ E_1 \cap E_2 = E_1 = E_2 \Leftrightarrow E_1 \equiv E_2$ 
+\end{enumerate}
+
+Lösung: Parameterform beider Ebenen gleichsetzen.\\
+Mögliche Fälle:\\
+\begin{enumerate}
+	\item keine Lösung $\Leftrightarrow E || g$
+	\item unendlich viele Lösungen mit einem Parameter $\Leftrightarrow E_1 \cap E_2 = g_s$
+	\item unendlich viele Lösungen mit zwei Parametern $E_1 \equiv E_2$
+\end{enumerate}
+
+%\section{Herleitung der Normalenform an einem Beispiel}
+%\begin{bsp}
+%Sei $\vec{x} = \left( \begin{array}{c} 1 \\ 1 \\ 2 \end{array} \right) + \lambda \left( \begin{array}{c} 1 \\ 0 \\ -2 \end{array} \right) + \mu \left( \begin{array}{c} -1 \\ 1 \\ -2 \end{array} \right); \lambda, \mu \in \mathbb{R}$\\
+%$\rightarrow 2x_1 + 4x_2 + 1x_3 = 8$\\
+%Dies lässt sich auch schreiben als $\left( \begin{array}{c} x_1 \\ x_2 \\ x_3 \end{array} \right) \cdot \left( \begin{array}{c} 2 \\ 4 \\ 1 \end{array} \right) = 8$ \\
+%$\Leftrightarrow \left( \begin{array}{c} x_1 \\ x_2 \\ x_3 \end{array} \right) \cdot \left( \begin{array}{c} 2 \\ 4 \\ 1 \end{array} \right) -8 = 0$ \\
+%$\Leftrightarrow \left( \begin{array}{c} x_1 \\ x_2 \\ x_3 \end{array} \right) \cdot \left( \begin{array}{c} 2 \\ 4 \\ 1 \end{array} \right) - \left( \begin{array}{c} 2 \\ 4 \\ 1 \end{array} \right) \cdot \left( \begin{array}{c} 0 \\ 2 \\ 0 \end{array} \right) = 0$ da $8 = \left( \begin{array}{c} 2 \\ 4 \\ 1 \end{array} \right) \cdot \left( \begin{array}{c} 0 \\ 2 \\ 0 \end{array} \right)$\\
+%$\Leftrightarrow \left[ \left( \begin{array}{c} x_1 \\ x_2 \\ x_3 \end{array} \right) - \left( \begin{array}{c} 0 \\ 2 \\ 0 \end{array} \right) \right] \cdot \left( \begin{array}{c} 2 \\ 4 \\ 1 \end{array} \right) = 0$\\
+
+%$\vec{n} = \left( \begin{array}{c} 2 \\ 4 \\ 1 \end{array} \right) \bot E$ heißt \textbf{Normalenvektor}.
+%\end{bsp}
+
+\section{Darstellungsmöglichkeiten von Ebenen}
+\begin{enumerate}
+	\item Parameterform (PF; Vektorgleichung) \\
+	$E: \vec{x} = \vec{a} + \lambda \vec{u} + \mu \vec{v}; \lambda, \mu \in \mathbb{R}$
+	\item Koordinatenform (KF; Skalargleichung) \\
+	$E: x_1 a_1 + x_2 a_2 + x_3 a_3 = k; k \in \mathbb{R}$ \\
+	$\vec{n} = \left( \begin{array}{c} a_1 \\ a_2 \\ a_3 \end{array} \right)$ ist ein Normalenvektor!
+	\item Normalenform (NF)\\
+	$E: (\vec{x} - \vec{p}) \cdot \vec{n} = 0 \Leftrightarrow \vec{x} \cdot \vec{n} = \vec{p} \cdot \vec{n}$\\
+	dabei gilt:\\
+	$\vec{p}$ Ortsvektor zu Stützpunkt $P \in E$\\
+	$\vec{x} - \vec{p} \in E$\\
+	$\vec{n} \bot E$ Normalenvektor \\
+	$\vec{n} \bot \vec{u} \land \vec{n} \bot \vec{v}$
+\end{enumerate}
+
+\subsection{Umwandlung von einer Ebenendarstellung in eine andere}
+\begin{enumerate}
+	\item $NF \rightarrow KF$\\
+	NF ausmultiplizieren und man erhält eine KF
+	\item $KF \rightarrow NF$\\
+	$\vec{n} = \left( \begin{array}{c} a_1 \\ a_2 \\ a_3 \end{array} \right)$, als Stützpunkt wähle einen beliebigen Punkt $P \in E$, zum Beispiel durch \textit{raten} einer Lösung der Gleichung aus der Koordinatenform!\\
+	 Einsetzen in $(\vec{x} - \vec{p}) \cdot \vec{n} = 0$
+	 \item $PF \rightarrow NF$\\
+	 $\vec{n}$ bestimmen mit $\vec{n} \cdot \vec{u} = 0 \land \vec{n} \cdot \vec{v} = 0$. Man erhält ein unterbestimmtes LGS, wählt eine Variable frei und erhält daraus die beiden anderen, also den Normalenvektor. Als Nächstes wählt man einen Stützvektor $\vec{p} \in E$, der Einfachheit halber denselben Stützvektor wie in der PF.
+	 \item $NF \rightarrow PF$\\
+	Stützvektor übernehmen. Finde dann zwei linear unabhängige Vektoren, die senkrecht auf dem Normalenvektor stehen. Dazu jeweils: Setze eine Koordinates des Normalenvektors $=0$, vertausche die beiden anderen und ändere bei einer dieser beiden das Vorzeichen!
+\end{enumerate}
+
+\section{Lagebeziehungen zweier Ebenen im Raum (mit NF)}
+\[E_1: \vec{x} \cdot \vec{n} = k_1 \]
+\[E_2: \vec{x} \cdot \vec{m} = k_2 \]
+\begin{enumerate}
+	\item $E_1 || E_2 \Leftrightarrow \vec{n} = \lambda \vec{m}$
+	\item $E_1 \equiv E_2 \Leftrightarrow \vec{n} = \lambda \vec{m} \land k_1 = \lambda k_2$
+	\item $E_1 \cap E_2 = g \Leftrightarrow \vec{n} \neq \lambda \vec{m}$\\
+	Spezialfall: $E_1 \bot E_2 \Leftrightarrow \vec{n} \cdot \vec{m} = 0$
+\end{enumerate}
+
+\section{Abstandsbestimmung (Zusammenfassung)}
+P, Q, R Punkte; E, F Ebenen; g, h Geraden
+\begin{itemize}
+	\item $d(P, Q) = |\vec{p} - \vec{q}| = \sqrt{(p_1 - q_1)^2 + (p_2 - q_2)^2 + (p_3 - q_3)^2}$
+	\item $d(P, g)$ Lotfußpunkt-Verfahren (siehe \ref{lotfusspunkt}) $\rightarrow$ Flächenberechnung
+	\item $d(g, h)$ für $g \| h$:\\
+	Wähle eine Gerade aus und berechne dann den Abstand dieser Gerade zum Stützpunkt der anderen Geraden.
+	\item $d(E, R)$\\
+	\begin{definition} Unter dem Abstand eines Punktes von einer Ebene versteht man die kürzeste Entfernung des Punktes zur Ebene. Diese ist die Länge des Lotes vom Punkt auf die Ebene.\end{definition}
+	\textbf{Verfahren 1:}\\
+	gegeben: 
+		\begin{align*}
+		&E: x_1 + 8x_2 - 4x_3 = 25\\
+		&R(2/0/1)
+		\end{align*}
+		\begin{enumerate}
+			\item Bestimmung einer Lotgeraden $g_\bot$ zu $E$:\\
+				\begin{align*}
+				g_\bot: \vec{x} = \left( \begin{array}{c} 2 \\ 0 \\ 1 \end{array} \right) + \lambda \left( \begin{array}{c} 1 \\ 8 \\ -4 \end{array} \right); \lambda \in \mathbb{R}
+				\end{align*}
+			\item Bestimmung des Lotfußpunktes $F$ als gemeinsamer Punkt von $g_\bot$ und $E$.
+				\begin{align*}
+				x_1 &=2 + \lambda \\
+				x_2 &=0 + 8\lambda \\
+				x_3 &=1-4\lambda
+				\end{align*}
+				Einsetzen in die Ebenengleichung:
+				\begin{align*}
+				2 + \lambda + 8 \cdot (0 + 8\lambda) - 4 \cdot (1 - 4\lambda) &= 25 \\
+				\Leftrightarrow \lambda &= \frac{1}{3}
+				\end{align*}
+				Einsetzen in die Koordinatengleichungen:
+				\[F: \vec{f} =  \left( \begin{array}{c} \frac{7}{3} \\ \frac{8}{3} \\ -\frac{1}{3} \end{array} \right) \]
+				\item \begin{align*}
+				d(F, R) &= \sqrt{(2- \frac{7}{3})^2 + (0 - \frac{8}{3})^2 + (1+ \frac{1}{3})^2} \\
+				&= 3
+				\end{align*}
+		\end{enumerate}
+		\textbf{Verfahren 2 (LK):} \\
+		Sei P der Stützvektor der Ebene, $\vec{n_0}$ der normierte Normalenvektor an diesem Punkt, $\gamma$ der Winkel zwischen $\vec{n_0}$ und $\vec{PR}$ und $d$ der Abstandes des Punktes $R$ von der Ebene.
+		$\vec{n_0}$ normierter Normalenvektor ($\vec{n_0} = \frac{\vec{n}}{|\vec{n}|}$) \\
+		Sei $E: (\vec{x} - \vec{p}) \cdot \vec{n} = 0$ eine Ebene. Dann heißt
+		\[ E: (\vec{x} - \vec{p}) \cdot \vec{n_0} = 0 \]
+		\textbf{Hesse'sche Normalenform} der Ebene.
+		\begin{align*}
+		\vec{n_0} \cdot \vec{PR} &= |\vec{n_0}| \cdot |\vec{PR}| \cdot \cos(\gamma) \\
+		\cos(\gamma) &= \frac{d}{|\vec{PR}|} \\
+		\Rightarrow \vec{n_0} \cdot \vec{PR} &= |\vec{n_0}| \cdot |\vec{PR}| \cdot \frac{d}{|\vec{PR}|} \\
+		&= \vec{n_0} \cdot d \\
+		&= d		\\
+		\Leftrightarrow |\vec{n_0} \cdot (\vec{r} - \vec{p})| &= d
+		\end{align*}
+\item $d(E, g)$
+\begin{enumerate}
+	\item	$E \| g$
+	\item HNF oder NF bestimmen
+	\item Abstand berechnen.
+\end{enumerate}
+	\textbf{Merksatz:} Sind eine Gerade $g$ und eine Ebene $E$ zueinander parallel haben alle Punkte auf $g$ den selben Abstand zur Ebene. Wir berechnen den Abstand mithilfe von Verfahren 1 oder 2.
+\item $d(E, F)$
+\begin{enumerate}
+	\item HNF oder NF aufstellen
+	\item zeige $E \| F$
+	\item Wähle einen beliebigen Punkt der Ebene $E$ und bestimme seinen Abstand zu $F$ (oder umgekehrt).
+\end{enumerate}
+\textbf{Beispielaufgabe (LK):} Bestimme alle Punkte, die zu 
+\[ E: 4x_1 + 12x_2 - 3x_3 = 8 \]
+den Abstand 2 haben. \\
+
+\textbf{Lösungsstrategie:}
+\begin{enumerate}
+	\item Die gesuchten Punkte liegen auf zwei Ebenen, die zu $E$ den Abstand 2 haben.
+	\item Wähle $P(p_1; p_2; p_3)$
+	\item HNF von E aufstellen
+	\item Löse Gleichung $d(E, P) = 2$ nach $p_1, p_2, p_3$ auf
+	\item wegen der Betragsstriche ergeben sich zwei Fälle
+	\item Stelle zwei Ebenen $E_1$ und $E_2$ auf, wobei $P$ und $P'$ Punkte der Ebenen sind. Den Normalenvektor übernehmen wir von $E$
+\end{enumerate}
+\end{itemize}
+
+\section{Abstand zweier windschiefer Geraden (LK)}
+\textbf{Verfahren 1:}
+\begin{itemize}
+	\item $g_1$, $g_2$ haben keinen Schnittpunkt und sind nicht parallel. Sie sind also windschief.
+	\item Stelle eine Hilfsebene auf, für die gilt:
+	\begin{align*}
+		E \| g_1 &\land g_2 \in E\\
+		g_1 : \vec{x} &= \vec{u} + \lambda \vec{v}\\
+		g_2 : \vec{x} &= \vec{w} + \mu \vec{r}\\
+		E: \vec{x} &= \vec{w} + \mu \vec{r} + \lambda \vec{v}
+	\end{align*}
+	\item Forme $E$ in HNF um
+	\item Berechne $d(E, g_1) = d(E, U)$
+\end{itemize}
+\textbf{Verfahren 2:}\\
+Zu $g_1$ und $g_2$ gibt es zwei parallele Ebenen.
+\begin{align*}
+E_{g_1} &: (\vec{x} - \vec{u}) \cdot \vec{n} = 0 \\
+E_{g_2} &: (\vec{x} - \vec{w}) \cdot \vec{n} = 0 \\
+d &= | (\vec{u} - \vec{w}) \cdot \vec{n}_0 | \\
+\vec{n} \bot \vec{v} &\land \vec{n} \bot \vec{r}
+\end{align*}
+
+\section{Schnittwinkel}
+\textbf{Achtung}: Bei Berechnung von Winkeln sollte der Taschenrechner auf das Gradmaß (\textit{D} oder \textit{Deg}) gestellt werden!\\s
+\textbf{Vektor-Vektor:}\\
+\begin{align*}
+\cos \alpha = \frac{\vec{a} \cdot \vec{b}}{|\vec{a}| \cdot |\vec{b}|}
+\end{align*}
+\textbf{Gerade-Gerade:}\\
+\begin{align*}
+g: \vec{x} &= \vec{p} + \lambda \vec{u}\\
+h: \vec{x} &= \vec{q} + \mu \vec{v} \\
+& \lambda, \mu \in \mathbb{R}
+\end{align*}
+Schneiden sich zwei Geraden $g$ und $h$, so entstehen vier Winkel, zwei der Größe $\alpha$ und zwei der Größe $ \beta$. Der Schnittwinkel von $g$ und $h$ ist derjenige, der kleiner oder gleich $90^{\circ}$ ist. Es gilt also wiederum:
+\begin{align*}
+\cos \alpha = \frac{\vec{a} \cdot \vec{b}}{|\vec{a}| \cdot |\vec{b}|}
+\end{align*}
+\textbf{Ebene-Ebene:}\\
+\begin{align*}
+E_1: (\vec{x} - \vec{p}) \cdot \vec{n_1} = 0 \\
+E_2: (\vec{x} - \vec{q}) \cdot \vec{n_2} = 0 
+\end{align*}
+Dann ist der Schnittwinkel zu errechnen durch
+\begin{align*}
+\cos \alpha = \frac{\vec{n_1} \cdot \vec{n_2}}{|\vec{n_1}| \cdot |\vec{n_2}|}
+\end{align*}
+\textbf{Merksatz}: Der Winkel zwischen den Ebenen ist gleich dem Winkel zwischen den Normalenvektoren!\\
+\textbf{Gerade-Ebene:}\\
+\begin{align*}
+g: \vec{x} &= \vec{p} + \lambda \vec{u}\\
+E_1: (\vec{x} - \vec{p}) \cdot \vec{n_1} = 0 \\
+\lambda \in \mathbb{R}
+\end{align*}
+wegen $\cos (90^\circ - \alpha) = \sin {\alpha}$ folgt
+\begin{align*}
+\sin{\alpha} =\frac{\vec{n_1} \cdot \vec{u}}{|\vec{n_1}| \cdot |\vec{u}|}
+\end{align*}
+
+\section{Das Vektorprodukt (LK)}
+\begin{definition}[Vektorprodukt]
+Für $\vec{a},\vec{b} \in \mathbb{R}^3$ definieren wir das Vektorprodukt als
+\[ \vec{a} \times \vec{b} := \begin{pmatrix} \det \begin{pmatrix} a_2 & b_2 \\ a_3 & b_3 \end{pmatrix} \\ - \det \begin{pmatrix} a_1 & b_1 \\ a_3 & b_3 \end{pmatrix} \\ \det \begin{pmatrix} a_1 & b_2 \\ a_2 & b_2 \end{pmatrix} \end{pmatrix} \]\\
+Der Betrag des Vektorprodukts entspricht dem Flächeninhalt des von den beiden Vektoren aufgespannten Parallelograms.
+\end{definition}
+\textbf{Eigenschaften des Vektorprodukts:}
+\begin{enumerate}
+\item $\vec{a} \times \vec{b} \perp \vec{a}, \vec{b} \Leftrightarrow \vec{a}, \vec{b}$ linear unabhängig
+\item $\vec{a} \times \vec{b} = \vec{0} \Leftrightarrow \vec{a},\vec{b}$ linear abhängig
+\item $\vec{a}, \vec{b}, \vec{a} \times \vec{b}$ bilden ein Rechtssystem
+\item $\vec{a} \times \vec{b} = - \left( \vec{b} \times \vec{a} \right)$
+\item $\vec{a} \times \left( \vec{b} + \vec{c} \right) = \vec{a} \times \vec{b} + \vec{a} \times \vec{c}$
+\item $\vec{a} \times \left(r\vec{b} \right) = r \left(\vec{a} \times \vec{b} \right)$
+\item $ \vec{a} \cdot \left( \vec{b} \times \vec{c} \right) = \left(\vec{a} \times \vec{b} \right) \cdot \vec{c}$
+\item $\left(\vec{a} \times \vec{b}\right) \cdot \vec{a} = 0\\
+\left(\vec{a} \times \vec{b} \right) \cdot \vec{b} = 0$
+\item $\vec{d} = \vec{c} + r\vec{a} + s\vec{Ub} \Rightarrow \left(\vec{a} \times \vec{b}\right)\cdot \vec{c} = \left(\vec{a} \times \vec{b}\right) \cdot \vec{d}$
+\end{enumerate}
+\textbf{Volumen eines Spats:} 
+\[ V = A \cdot h = \left| \left( \vec{a} \times \vec{b} \right) \cdot \vec{c} \right| \]

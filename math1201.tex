@@ -1,0 +1,92 @@
+\documentclass [a4paper, 12pt]{amsbook}
+
+\usepackage{german}
+\usepackage[latin1]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{pstricks}
+\usepackage{eurosym} 			%fr  Symbol
+\usepackage{fancyhdr}
+%\usepackage{hyperref}
+
+\newtheorem{satz}{Satz}[section]
+\newtheorem{beweis}{Beweis}[section]
+\newtheorem{definition}{Definition}[section]
+\newtheorem{bsp}{Beispiel}[section]
+
+\pagestyle{fancy}% muss vor \renewcommand{\sectionmark} stehen
+\fancyhf{}
+\fancyhead[R]{\thepage}% gerade Seiten, links
+\fancyhead[L]{\leftmark}% gerade Seiten, rechts
+%\fancyhead[OL]{\rightmark}% ungerade Seiten, links
+%\fancyhead[OR]{\thepage}% ungerade Seiten, rechts
+\renewcommand{\sectionmark}[1]{
+\markboth{\thesection{} #1}{\thesection{} #1}
+}
+\renewcommand{\subsectionmark}[1]{
+\markright{\thesubsection{} #1}
+}
+
+\begin {document}
+\title{Leistungskurs Mathematik 12 / 13}
+\author{Fabian Nick}
+
+\begin{titlepage}
+\begin{center}
+\textbf{\LARGE Leistungskurs Mathematik NRW}\\
+
+\today \\
+
+von: Fabian Nick
+
+\begin{figure}[hp]
+	\centering
+		\includegraphics[width=1.0\textwidth]{abbildungen/3dplot.jpg}
+	\label{fig:3dplot}
+\end{figure}
+
+\end{center}
+\end{titlepage}
+
+
+\input{hinweise.tex}
+\tableofcontents
+
+\part {Analysis}
+
+\chapter {Differentialrechnung mit rationalen Funktionen}
+\input{differentialrRFkt.tex}
+
+%\chapter{Differentialrechnung mit gebrochen-rationalen Funktionen} \label{gebr}
+%\input{differentialrGRFkt.tex}
+
+\chapter{Integralrechnung}
+\input{integralrechnung.tex}
+
+\part{Lineare Algebra}
+
+\chapter{Lineare Gleichungssysteme (LGS)}
+\input{lgs.tex}
+
+\chapter{Vektoriell-analytische-Geometrie}
+\input{vag.tex}
+
+\chapter{Matrizen und Abbildungen}
+\input{matrizenUndAbbildungen.tex}
+
+
+
+%\part{Stochastik}
+
+%\chapter{Beschreibung von Zufallsexperimenten}
+%\input{zufallsexperimente.tex}
+
+
+
+%\newpage
+%\appendix
+%\section{Lotfupunkt-Verfahren}
+%\input{lotfusspunkt.tex}\label{anhangA}
+
+\end{document}

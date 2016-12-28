@@ -1,0 +1,471 @@
+
+\section {Motivation der Differentialrechnung}
+Ziel der Differentialrechnung ist, möglichst viele Aussagen über das Verhalten einer Funktion zu machen. Dazu gehört zum Beispiel das Bestimmen von Extremstellen der Funktion.\\
+Die Differentialrechnung bedient sich dazu dem Mittel der \emph{Ableitung}, die das Steigungsverhalten der Funktion beschreibt. Die Ableitung $f'(x_0)$ der Funktion $f$ an der Stelle $x_0$ ist genau gleich der Steigung der Tangenten am Graphen der Funktion $f$ am Punkt $x_0$. Wie wir diese Steigung ermitteln haben wir in Jahrgangsstufe 11 gelernt (vgl. \emph{Differenzenquotienten})\\
+Als Begründer der Differentialrechnung gelten im Übrigen sowohl \textsc{Isaac Newton} (1642-1727) als auch \textsc{Gottfried Wilhelm Leibniz} (1646-1716). Die heutige Definition der Ableitung als Grenzwert von Sekantensteigungen geht jedoch auf \textsc{Augustin Louis Cauchy} (1789-1857) zurück.
+
+
+\section {Differenzierbarkeit von Funktionen}
+Jeder Punkt auf dem Graphen von $f$ muss eine \emph{eindeutige} Tangente haben. \\
+Mathematisch bedeutet dies, dass
+\begin{equation*}
+\lim_{x\nearrow x_0} \left( \frac{f(x)-f(x_0)}{x-x_0} \right) = \lim_{x\searrow x_0} \left( \frac{f(x)-f(x_0)}{x-x_0} \right)
+\end{equation*}
+gelten muss, wobei darauf zu achten ist, dass die beiden Grenzwerte auch existieren.
+\begin{bsp}
+Polynome sind differenzierbare Funktionen. Ein Beispiel für eine nicht differenzierbare Funktion liefert $f(x) = |x|$, denn diese Funktion hat in $0$ keine eindeutige Tangente.
+\begin{figure}[h]
+	\centering
+		\includegraphics[width=0.50\textwidth]{abbildungen/abs(x).jpeg}
+	\caption{$f(x) = |x|$}
+	\label{fig:abs(x)}
+\end{figure}
+\end{bsp}
+Erste Regel für die Ableitungsfunktion: 
+\begin{equation*}
+f(x)=x^n \rightarrow f'(x) = n \cdot x^{n-1}
+\end{equation*}
+Mit dieser Regel kann man Polynomfunktionen ableiten, denn es gilt zusätzlich:
+\begin{equation*}
+(u(x)+v(x))' = u'(x) + v'(x)
+\end{equation*}
+\begin{bsp}
+Die Ableitung der Funktion $f(x) = x^3 + 2x^2 + 4x -1$ lautet $f'(x) = 3x^2 + 4x + 4$.
+\end{bsp}
+
+\section {Eigenschaften einer Funktion}
+\begin{itemize}
+	\item Verhalten von $f$ für $ x \rightarrow \pm \infty $
+	\item Nullstellen
+	\item Monotonieverhalten
+	\item	Extrema
+	\item Wendepunkte
+	\item Symmetrieverhalten
+\begin{itemize}
+	\item Nullpunktsymmetrie
+	\item y-Achsensymmetrie
+\end{itemize}
+\end{itemize}
+
+\section {Vollständige Kurvendiskussion einer Ganz-Rationalen Funktion}
+\begin{enumerate}
+	\item Definitionsmenge\index{Definitionsmenge}, Differenzierbarkeit
+	\item Ableitungen bilden
+	\item Symmetrieverhalten \\
+	Nullpunktsymmetrie: $ f(-x) = -f(x) $ \\
+	y-Achsensymmetrie: $ f(-x) = f(x) $
+	\item Verhalten für $ x \rightarrow \pm \infty $
+	\item Nullstellen ($f(x) = 0$)
+	\item Extrema (lokale) \\
+	notwendige Bedingung: $ f'(x) = 0 $ \\
+	hinreichende Bedingug: $f'(x) = 0 \land f''(x) \neq 0 $ \\
+	a) $ f'(x_E) = 0 \land f''(x_E) < 0 \rightarrow $ in $x_E$ liegt ein HOP \\
+	b) $ f'(x_E) = 0 \land f''(x_E) > 0 \rightarrow $ in $x_E$ liegt ein TIP
+	\item Wendepunkte
+	notwendige Bedingung: $f''(x) = 0$ \\
+	hinreichende Bedingung: $f''(x) = 0 \land f'''(x) \neq 0$ \\
+	a) $ f''(x_W) = 0 \land f'''(x_W) < 0 \rightarrow$  in $x_W$ liegt ein L-R Wendepunkt vor. \\
+	b) $ f''(x_W) = 0 \land f'''(x_W) > 0 \rightarrow$  in $x_W$ liegt ein R-L Wendepunkt vor.
+	\item Wertetabelle
+	\item Graph
+\end{enumerate}
+
+\begin{bsp}[Diskussion der Funktion $f(x) = \frac{1}{3}x^3 + \frac{1}{2}x^2$]
+Wir diskutieren hier als Beispiel die Funktion $f(x) = \frac{1}{3}x^3 + \frac{1}{2}x^2$ nach obigen Schema.
+	\begin{enumerate}
+		\item \textbf{Definitionsmenge} und \textbf{Diffbarkeit}: $D = \mathbb{R}$, da $f$ ein ganz-rationales Polynom, daher ist $f$ auch auf dem gesamten Definitionsbereich differenzierbar.
+		\item \textbf{Ableitungen} bilden:
+			\begin{align*}
+				&f'(x) = x^2 + x\\
+				&f''(x) = 2x+1\\ 
+				&f'''(x) = 2
+			\end{align*}
+		\item \textbf{Symmetrie:} Das Polynom enthält sowohl gerade als auch ungerade Potenzen von x $\Rightarrow$ keine Aussagen über Symmetrie möglich.
+		\item \textbf{Nullstellen:}
+			\begin{align*}
+				&f(x) = \frac{1}{3}x^3 + \frac{1}{2}x^2 = x^2 \left(\frac{1}{3} x + \frac{1}{2}\right) \\
+				\Rightarrow &f(x) = 0 \\
+				\Leftrightarrow &x = 0 \vee \frac{1}{3} x + \frac{1}{2} = 0 \\
+				\Leftrightarrow &x=0 \vee x = -\frac{3}{2}
+			\end{align*}
+			Die Nullstellen sind also $x_{N_1} = 0$ und $x_{N_2} = - \frac{3}{2}$.
+		\item \textbf{Verhalten gegen $\pm \infty$:}\\
+			\begin{align*}
+				\lim_{x\to \infty} f(x) = + \infty\\
+				\lim_{x\to - \infty} f(x) = - \infty
+			\end{align*}
+		\item \textbf{Extremstellen:}\\
+			(1) notwendige Bedingung: $f'(x) = 0$\\
+			(2) hinreichende Bedingung: $f''(x) \neq 0$\\
+			zu (1):
+			\begin{align*}
+				f'(x) = 0 &\Leftrightarrow x^2 + x = 0\\
+				&\Leftrightarrow x(x+1) = 0\\
+				&\Leftrightarrow x=0 \vee x=-1
+			\end{align*}
+			zu (2):
+			\begin{align*}
+				f''(0) = 1 > 0 \Rightarrow \textrm{in $x=0$ liegt ein lokales Minimum}\\
+				f''(-1) = -1 <0 \Rightarrow \textrm{in $x=-1$ liegt ein lokales Maximum}
+			\end{align*}
+		\item \textbf{Wendestellen:}\\
+			(1) notwendige Bedingung: $f''(x) = 0$\\
+			(2) hinreichende Bedingung: $f'''(x) \neq 0$\\
+			zu (1):
+			\begin{align*}
+				f''(x) = 0 &\Leftrightarrow 2x + 1 = 0\\
+				&\Leftrightarrow x = - \frac{1}{2}
+			\end{align*}
+			zu (2):
+			\begin{align*}
+				f'''\left(-\frac{1}{2}\right) = 2 >0 \Rightarrow \textrm{in $x = - \frac{1}{2}$ liegt ein Rechts-Links-Wendepunkt.}
+			\end{align*}
+		\item \textbf{Wertetabelle:}\\
+			\begin{tabular}{c|c|c|c|c|c}
+				$x$ & $-\frac{3}{2}$ & $0$ & $-1$ & $-\frac{1}{2}$ & $1$ \\
+				\hline
+				$f(x)$ & $0$ & $0$ & $\frac{1}{6}$&$\frac{1}{12}$&$\frac{5}{6}$\\
+				\hline
+				&Nst&Nst, Min& Max & WEP &
+			\end{tabular}
+		\item \textbf{Graph:}\\	
+\begin{figure}[h]
+	\centering
+		\includegraphics[width=0.50\textwidth]{abbildungen/funkt1.jpeg}
+	\caption{$f(x) = \frac{1}{3}x^3 + \frac{1}{2}x^2$}
+	\label{fig:funkt1}
+\end{figure}
+		
+	\end{enumerate}
+\end{bsp}
+
+\section {Funktionenscharen}
+$ f_a (x) = x^4 - ax^2$ --- $ a \in \mathbb{R} \land \mathbb{D}  \in \mathbb{R} $ \\
+$a$ ist der Scharenparameter. Alle markanten Stellen  (Extrema, Wendepunkte, ...) werden in Abhängigkeit von $a$ berechnet.
+\emph{Wichtig}: Gegebenenfalls sind Fallunterscheidungen notwendig!
+\begin{definition}[Ortskurven]
+\textbf{Ortskurven} sind Graphen, die durch jweils alle markanten Punkte eines Typs verlaufen. (Also zum Beispiel ein Graph durch alle WEP oder durch alle HOP usw.)
+\end{definition}
+
+\begin{bsp}[Diskussion einer Funktionenschar]
+	Gegeben ist die Funktionenschar
+	\begin{align*}
+		f_a(x) = \frac{1}{4}x^4-ax^2 \quad a \in \mathbb{R}\setminus\{0\}
+	\end{align*}
+	\begin{enumerate}
+		\item Wir bilden zunächst die ersten drei \textbf{Ableitungen}:
+			\begin{align*}
+				f'_a(x) &= x^3 -2ax\\
+				f''_a(x) &= 3x^2 -2a\\
+				f'''_a(x) &=  6x
+			\end{align*}
+		\item \textbf{Symmetrie:} $f_a(x)$ ist achsensymmetrisch für alle $a$, denn es kommen nur gerade Potenzen von $x$ in der Funktionsgleichung vor.
+		\item \textbf{Verhalten im Unendlichen:} Es ist
+			\begin{align*}
+				\lim_{x \to \infty} f_a(x) = \lim_{x \to \infty} \frac{1}{4}x^4 = \infty \\
+				\lim_{x \to -\infty} f_a(x) = \lim_{x \to -\infty} \frac{1}{4}x^4 = \infty
+			\end{align*}
+		\item \textbf{Nullstellen:}
+			\begin{align*}
+				f_a(x) = 0 &\Leftrightarrow \frac{1}{4}x^4-ax^2 \\
+				&\Leftrightarrow x^2 (\frac{1}{4} x^2 -a)\\
+				&\Leftrightarrow x^2 = 0 \lor \frac{1}{4} x^2-a = 0 \\
+				&\Leftrightarrow x = 0 \lor x = \pm 2\sqrt{a}
+			\end{align*}
+			Hier sehen wir nun, dass die Nullstellen abhängig von der Wahl des Parameters $a$ sind. Es ergibt sich:
+			\begin{itemize}
+				\item für $a<0$: $x=0$ ist die einzige Nullstelle, denn $2\sqrt{a}$ ist für $a<0$ nicht definiert.
+				\item für $a>0$: Die Nullstellen sind $x=0$, $x=2\sqrt{a}$, $x=-2\sqrt{a}$
+			\end{itemize}
+		\item \textbf{Extrema:}
+			\begin{align*}
+				f'_a(x) = 0 &\Leftrightarrow x^3-2ax = 0\\
+				&\Leftrightarrow x(x^2-2a) = 0\\
+				&\Leftrightarrow x= 0 \lor x^2-2a = 0\\
+				&\Leftrightarrow x= 0 \lor x^2 = 2a\\
+				&\Leftrightarrow x= 0 \lor x = \pm \sqrt{2a}
+			\end{align*}
+			Wieder müssen wir die Extrema in Abhängigkeit von $a$ angeben:
+			\begin{itemize}
+				\item $a<0$: $x=0$ ist das einzige potentielle Extremum. Setze $x=0$ in $f''_a(x)$ ein und erhalte $f''_a(0) = -2a >0$ also ist $x=0$ in diesem Fall ein Tiefpunkt.
+				\item $a>0$: Die Extrema sind $x=0$, $x=\sqrt{2a}$ und $x=-\sqrt{2a}$. Einsetzen in $f''_a(x)$ liefert, dass $x=\pm \sqrt{2a}$ Tiefpunkte sind und $x=0$ ein Hochpunkt.
+			\end{itemize}
+		\item \textbf{Wendestellen:}
+			\begin{align*}
+				f''_a(x) = 0 &\Leftrightarrow 3x^2 -2a = 0\\
+				&\Leftrightarrow x^2 = \frac{2}{3}a\\
+				&\Leftrightarrow x = \pm \sqrt{\frac{2}{3}a}
+			\end{align*}
+			\begin{itemize}
+				\item $a<0$: Es gibt keine Wendepunkte.
+				\item $a>0$: Die potentiellen Wendestellen sind $x=\pm \sqrt{\frac{2}{3}a}$. Durch Einsetzen in $f'''_a(x)$ erhält man, dass $\sqrt{\frac{2}{3}a}$ ein rechts-links Wendepunkt und $-\sqrt{-\frac{2}{3}a}$ ein links-rechts Wendepunkt ist.
+			\end{itemize}
+		\item \textbf{Ortskurve durch die Wendepunkte mit $x=\sqrt{\frac{2}{3}a}$ für $a>0$:}\\
+			Die Wendepunkte haben die Koordinaten $W\left(\sqrt{\frac{2}{3}a}, - \frac{5}{9}a^2\right)$. Bringen wir nun $x$ und $y$ in funktionale Abhängigkeit:
+			\begin{align*}
+				x= \sqrt{\frac{2}{3}a} &\wedge y= - \frac{5}{9}a^2 \\
+				a == \frac{3}{2} x^2 &\wedge y= - \frac{5}{9}a^2\\
+				\Rightarrow y = - \frac{5}{4}x^4
+			\end{align*}
+			Die Ortskurve durch alle Wendepunkte mit $x=\sqrt{\frac{2}{3}a}$ lautet also $y = - \frac{5}{4}x^4$. Die Ortskurve durch die anderen Wendepunkte berechnet man analog.
+		\item \textbf{Graph:}
+\begin{figure}[h]
+	\centering
+		\includegraphics[width=0.70\textwidth]{abbildungen/funktschar1.jpeg}
+	\caption{Die Graphen der Funktionenschar für $a=0.5$ (rot) und $a=-0.5$ (grün)}
+	\label{fig:funktschar1}
+\end{figure}		
+	\end{enumerate}
+\end{bsp}
+
+\section{Bisher bekannte Ableitungsregeln}
+\begin{enumerate}
+	\item Konstantenregel \\
+	$f(x) = c \cdot u(x)$, $u(x)$ differenzierbar und $ c \in \mathbb{R}$ \\
+	$ \rightarrow $ f ist differenzierbar und 
+	\begin{align}
+	f'(x) = c \cdot u'(x)
+	\end{align}
+	\item Summenregel \\
+	u, v differenzierbar \\
+	$ f(x) = u(x) + v(x) $ differenzierbar und 
+	\begin{align}
+	f'(x) = u'(x) + v'(x)
+	\end{align}
+\end{enumerate}
+
+\section {Weitere Ableitungsregeln}
+\begin{satz}[Kettenregel]
+Sei $f(x) = u(v(x)) $ und u, v differenzierbar, dann ist auch f differenzierbar und 
+\begin{align} 
+f'(x) = u'(v(x)) \cdot v'(x)
+\end{align}
+\end{satz}
+\begin{bsp}
+$f(x) = (x^2 + 3)^2$ also $u(x)=z^2$ und $ v(x) = x^2 + 3$
+\begin{align*}
+f(x)  &= x^4 + 6x^2 + 9 \\
+f'(x) &= 4x^3 + 12x = 2(x^2 + 3) \\
+\end{align*}
+\end{bsp}
+\begin{beweis}[Kettenregel]
+$ x_0 \in \mathbb{D}_f $ beliebig, $ z = v(x)$ und $z_0 = v(x_0)$ ($z \neq z_0$ "`nahe"' $x_0$)
+\begin{align*}
+\lim_{x \rightarrow x_0} \left[ \frac{f(x) - f(x_0)}{x - x_0} \right] &= \lim_{x \rightarrow x_0} \left[ \frac{u(v(x)) - u(v(x_0))}{x-x_0} \cdot \frac{z-z_0}{z-z_0}\right] \\
+&=\lim_{x \rightarrow x_0} \left[ \frac{u(z) - u(v(z_0))}{z-z_0}\right] \cdot  \lim_{x \rightarrow x_0} \left[ \frac{v(x) - v(x_0)}{x-x_0}\right] \\
+&=\lim_{v(x) \rightarrow v(x_0)} \left[ \frac{u(z) - u(v(z_0))}{z-z_0}\right] \cdot v'(x_0)\\
+&=u'(v(x_0)) \cdot v'(x_0)
+\end{align*}
+\end{beweis}
+
+\begin{satz}[Produktregel]
+Sei $ f(x) = u(x) \cdot v(x)$ und u, v sind differenzierbar. Dann gilt: f ist auch differenzierbar und 
+\begin{align}
+f'(x) = v(x) \cdot u'(x) + u(x) \cdot v'(x)
+\end{align}
+\end{satz}
+\begin{bsp}
+$f(x) = 2x^3 \cdot 4x$ also $u(x) = 2x^3 \Rightarrow u'(x) = 6x^2$ und $v(x) = 4x \Rightarrow v'(x) = 4$
+\begin{align*}
+f(x) &= 8x^4 \\
+f'(x) &= 32x^3 \\
+& = 24x^3 + 8x^3\\
+& = 6x^2 \cdot 4x + 4 \cdot 2x^3 \\
+\end{align*}
+\end{bsp}
+\begin{beweis}[Produktregel]
+$ x_0 \in \mathbb{D}_f $ beliebig
+\begin{align*}
+\lim_{x \rightarrow x_0} \left[\frac{f(x) - f(x_0)}{x-x_0}\right] &= \lim_{x \rightarrow x_0} \left[\frac{u(x) v(x) - u(x_0)  v(x_0)}{x-x_0}\right]\\
+&= \lim_{x \rightarrow x_0} \left[\frac{u(x)  v(x) - u(x_0)  v(x) + u(x_0)  v(x) - u(x_0)  v(x_0)}{x-x_0} \right] \\
+&= \lim_{x \rightarrow x_0} \left[\frac{u(x)  v(x) - u(x_0)  v(x)}{x-x_0}\right]  \\
+&\quad + \lim_{x \rightarrow x_0} \left[\frac{u(x_0)  v(x) - u(x_0)  v(x_0)}{x-x_0}\right]\\
+&=v(x_0)  u'(x_0) + u(x_0)  v'(x_o)
+\end{align*}
+\end{beweis}
+
+\begin{satz}[Quotientenregel]
+Sei $f(x) = u(x) \cdot \frac{1}{v(x)}$ und u, v seien differenzierbar und $v(x) \neq 0$. Dann gilt: f ist auch differenzierbar und 
+\begin{align}
+f'(x) = \frac{v(x) \cdot u'(x) - u(x) \cdot v'(x)}{v^2(x)}
+\end{align}
+\end{satz}
+\begin{beweis}[Quotientenregel]
+\begin{align*}
+f(x) &= u(x) \cdot \frac{1}{v(x)}\\
+sei \quad \frac{1}{v(x)} &= w(x) \rightarrow w'(x) = - \frac{1}{v^2(x)} \cdot v'(x) \\
+\\
+f'(x) &= u'(x) \cdot w(x) + u(x) \cdot w'(x) \\
+&= \frac{u'(x)}{v(x)} + u(x) \cdot \frac{-v'(x)}{v^2(x)}\\
+&= \frac{v(x) \cdot u'(x) - u(x) \cdot v'(x)}{v^2(x)}
+\end{align*}
+\end{beweis}
+
+\section{Extremalwertaufgaben mit Nebenbedingung}
+\begin{enumerate}
+	\item Skizze
+	\item Extremale Größe als Formel erfassen (\emph{Extremalbedingung})
+	\item Aufstellen einer \emph{Nebenbedingung}
+	\item Reduktion der beiden Gleichungen auf eine Variable (\emph{Zielfunkrion})
+	\item Berechnung des Extremums
+	\item Hinreichende Bedingung prüfen und / oder Randwerte betrachten
+	\item Rückbezug zum Sachproblem
+\end{enumerate}
+
+\section{Gebrochen rationale Funktionen}
+
+\begin{definition}[Gebrochen-rationale Funktionen] Gebrochen-rationale Funktionen sind Quotienten aus zwei ganz-rationalen Funktionen.\\
+$f(x) = \frac{u(x)}{v(x)}$, wobei $u$, $v$ differenzierbar und $n$ Grad von $u$, $m$ Grad von $v$.
+\end{definition}
+
+\begin{tabular}{|c|c|c|}
+\hline
+$n= m$:  \emph{unecht gebrochen} & $n<m$:  \emph{echt gebrochen} & $n>m$: \emph{unecht gebrochen}\\ \hline
+$f(x) = \frac{2x^2 + 1}{3x^2 - 1}$ & $f(x) = \frac{x}{x^2+1}$ & $f(x) = \frac{x^2+3}{x-1}$\\ \hline
+\end{tabular} \\
+\\
+Für gebrochen-rationale Funktionen gilt: \\
+$\mathbb{D} = \mathbb{R} \setminus \mathbf{N_v}$ \ \ ($ \mathbf{N_v}$: Nullstellenmenge von v) \\
+$\mathbf{N_f} = \mathbf{N_u}$ \ \ (ein Bruch ist genau dann 0, wenn der Zähler 0 ist.)
+
+\subsection{Untersuchung einer Funktion in der Nähe der Definitionslücken} \label{defluck}
+Dieser Punkt ist bei der Diskussion einer gebrochen-rationalen Funktion gesondert zu betrachten.
+\begin{definition}[Polstelle] Ist $x_0$ eine Nullstelle der Nennerfunktion und nach Kürzen \textbf{nicht} Nullstelle der Zählerfunktion, so heißt $x_0$ \textbf{Polstelle} von $f$
+\end{definition}
+In der Nähe von $x_0$ gilt dann: $f(x) \rightarrow \pm \infty $ \\
+Wir unterscheiden:
+\begin{enumerate}
+	\item falls $x \rightarrow x_0 \land x<x_0$ \ \ \ $f(x) \rightarrow + \infty $ \\
+	und $x \rightarrow x_0 \land x>x_0$ \ \ \ $f(x) \rightarrow + \infty $ \\
+	dann heißt $x_0$ \emph{Pol ohne Vorzeichenwechsel}.
+	\item falls $x \rightarrow x_0 \land x<x_0$ \ \ \ $f(x) \rightarrow + \infty $ \\
+	aber $x \rightarrow x_0 \land x>x_0$ \ \ \ $f(x) \rightarrow - \infty $ \\
+	dann heißt $x_0$ \emph{Pol mit Vorzeichenwechsel}.
+\end{enumerate}
+
+\subsection{Asymptotisches Verhalten}
+\textbf{Wichtig:} Bei unecht gebrochen-rationalen Funktionen, deren Zählergrad höher ist als der Nennergrad, ist zunächst eine Polynomdivision durchzuführen, um ein ganz-rationales und ein echt gebrochen-rationales Polynom zu erhalten.
+\begin{definition}[Asymptote] Eine Funktion $a(x)$ heißt \emph{Asymptote} des Graphen f, genau dann wenn  $\lim_{x \to x_0} (f(x) - a(x)) = 0$
+\end{definition}
+
+\subsubsection{Ergänzung: Regel von l'Hospital}
+\begin{satz}[Regel von l'Hospital]
+Sei $f(x) = u(x) / v(x)$ eine gebrochen rationale Funktion mit $v(x_0) = 0$. Sind $(u,v)$ differenzierbar in $x_0$, $u(x_0) = v(x_0) = 0$ und $v'(x_0) \neq 0$ dann ist
+\begin{align}
+\lim_{x \to x_0} \frac{u(x)}{v(x)} = \lim_{x \to x_0} \frac{u'(x)}{v'(x)}
+\end{align}
+\end{satz}
+
+\subsection{Hebbare Definitionslücken}
+\begin{definition}[Hebbare Definitionslücke] Ist $x_0$ eine Nullstelle des Nenners und auch Nullstelle des Zählers und lässt sich der Linearfaktor $(x-x_0)$ vollständig kürzen, so heißt $x_0$ \textbf{hebbare Definitionslücke}.
+\end{definition}
+
+
+
+\section{Ableitungen wichtiger Funktionen}
+
+
+
+\begin{tabular}{c|c|c}
+\textbf{Zeit} & \textbf{Wissende Personen} & \textbf{Wissende Personen} \\ \hline
+$t=0$ & 1 & 3 \\ \hline
+$t=1$ & 2 & 6 \\ \hline
+$t=2$ & 4 & 12 \\ \hline
+$t=3$ & 8 & 24 \\ \hline
+Funktion: & $f(t) = 2^t$ & $f(t) = 2^t \cdot 3$ \\ \hline
+\end{tabular}
+\\
+Allgemein: $f(x) = c \cdot a^x$ dabei ist $c$ der Startwert, $a$ der Wachstumsfaktor, $a 
+ 1$, $a \in \mathbb{R}^{+ \neq 1}$ ($0<a<1 \rightarrow$ Zerfall, $a>1 \rightarrow$ Wachstum) \\
+
+\begin{satz} $f(x+1)=c \cdot a^{x+1} = c \cdot a \cdot a^x = a \cdot f(x)$ \end{satz}
+
+\subsection{Ableitung von Exponentialfunktionen}
+$f(x) = a^x$ \\
+$a = e \rightarrow$ Eulerzahl \\
+$f(x) = e^x \rightarrow$ Exponentialfunktion \\
+\\
+wobei: \\
+$e= \lim_{n \rightarrow \infty} (1 + \frac {1}{n})^n$ mit $n \in \mathbb{N}$\\
+für sehr große $n$: $e\approx(1+\frac{1}{n})^n$ \\
+$e\approx2.718$ \\
+Ziel: Ableitung für $f(x) = a^x$\\
+$x_0 \in \mathbb{D}$
+\begin{align*}
+f'(x) &= \lim_{x \rightarrow 0} \left[\frac{a^x - a^{x_0}}{x-x_0}\right]\\
+&= \lim_{h \rightarrow 0} \left[\frac{a^{h+x_0}-a^{x_0}}{h}\right]\\
+& = \lim_{h \rightarrow 0} \left[\frac{a^h \cdot a^{x_0} - a^{x_0}}{h}\right]\\
+& = \lim_{h \rightarrow 0} \left[\frac{a^h - 1}{h}\right] \cdot a^{x_0}\\
+\end{align*}
+muss noch berechnet werden.\\
+
+Spezialfall: $f(x) = e^x$
+\begin{align*}
+f'(x_0) &= e^{x_0} \cdot \lim_{h \rightarrow 0}\left[\frac{e^h - 1}{h}\right] \\
+&= 1\\
+& = \lim_{n \rightarrow \infty} \left[\displaystyle \frac{e^{\frac{1}{n}} - 1}{\frac{1}{n}}\right]
+\end{align*}
+\\
+also bleibt zu zeigen, dass $\frac{e^{\frac{1}{n}} - 1}{\frac{1}{n}} = 1$ für sehr hohe $n$:
+\begin{align*}
+&\Leftrightarrow e^{\frac{1}{n}} -1 = \frac {1}{n} \\
+&\Leftrightarrow e^{\frac{1}{n}} = \frac {1}{n} + 1 \\
+&\Rightarrow e = (\frac{1}{n} + 1)^n \\
+&\Rightarrow f'(x) = f(x)
+\end{align*}
+
+\subsection{Natürliche Logarithmusfunktion}
+$e^x \rightarrow \overline{f}(x) = \ln(x)$: Natürliche Logarithmusfunktion. \\
+$y=e^x \rightarrow x = \ln(y)$ \\
+$a = e^{\ln(a)}$ allgemeingültig \\
+
+Daraus lässt sich eine allgemeingültige Ableitung von Exponentialfunktionen entwickeln:
+\begin{align*}
+f(x) &= a^x \\
+&= (e^{(\ln(a))^x}\\ 
+&= e^{\ln(a) x} \\
+\Rightarrow f'(x) &= e^{\ln(a) x} \cdot \ln(a)\\
+&= \ln(a) \cdot a^x
+\end{align*}
+\\
+Zusammenfassend:\\
+$(a^x)' = a^x \cdot \ln(a)$ \\
+$(e^x)' = e^x$ \\
+$f(x) = a^x \Leftrightarrow f(x) = e^{\ln(a)x}$ \\
+Es genügt also, die e-Funktion genau zu kennen, und zu diskutieren.
+
+\subsubsection{Ableitung der Logarithmusfunktion}
+
+$f(x) = \ln(x)$ \\
+\begin{align*}
+x&=e^{\ln(x)} \\
+1&=e^{\ln(x)} \cdot \ln'(x)\\
+ln'(x) &= \frac{1}{e^{\ln(x)}} \\
+& = \frac{1}{x}
+\end{align*}
+
+\subsection{Trigonometrische Funktionen}
+
+\emph{Additionstheoreme:}\\
+1. $\sin(\alpha) - \sin(\beta) = 2\cos(\frac{\alpha + \beta}{2}) \cdot \sin(\frac{\alpha - \beta}{2})$ \\
+2. $\cos(\alpha) - \cos(\beta) = 2\sin(\frac{\alpha + \beta}{2}) \cdot \cos(\frac{\alpha - \beta}{2})$\\
+\\
+Vermutung: $sin'(x) = cos(x)$ \\
+\begin{beweis}
+$x_0 \in \mathbb{D}_{sin} = \mathbb{R}$ \\
+\begin{align*}
+\lim_{x \rightarrow x_0} \left[\frac{f(x)-f(x_0)}{x-x_0}\right] = \lim_{x \rightarrow x_0} \left[\frac{\sin(x) - \sin(x_0)}{x-x_0}\right]
+\end{align*}
+
+Sei $x:=x_0 + h \Rightarrow x-x_0 = h$, statt $x\rightarrow x_0$ nun $h \rightarrow 0$.
+
+\begin{align*}
+&=\lim_{h \rightarrow 0}\left[\frac{\sin(x_0 + h) - \sin (x_0)}{h}\right]\\
+&=\lim_{h \rightarrow 0}\left[\displaystyle \frac{2\cos(\frac{x_0 +h + x_0}{2}) \cdot \sin(\frac{x_0 + h + x_0}{2})}{h}\right]\\
+&=\lim_{h \rightarrow 0}\left[\displaystyle \frac{\cos(x_0 + \frac{h}{2}) \cdot \sin(\frac{h}{2})}{\frac{h}{2}}\right] = \cos(x_0) \\
+\end{align*}
+
+Es folgen analog:\\
+$\cos'(x) = -\sin(x)$\\
+$\tan'(x) = \frac{1}{cos^2(x)}$
+\end{beweis}

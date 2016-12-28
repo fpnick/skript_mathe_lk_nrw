@@ -1,0 +1,324 @@
+\label{chmatrabb}
+\begin{align*}
+\begin{pmatrix}
+a_{11} & a_{12} & \cdots & a_{1n} \\
+a_{21} & a_{22} & \cdots & a_{2n} \\
+\vdots & & & \vdots \\
+a_{m1} & a_{m2} & \cdots & a_{mn}
+\end{pmatrix}
+\end{align*}
+$m, n \in \mathbb{N}$\\
+
+\begin{definition}[Matrix] Eine \textbf{Matrix} ist ein Zahlenschema mit m Zeilen und n Spalten.\\
+$a_{ij}$ sind die Einträge der Matrix aus $\mathbb{R}$, wobei $i = 1, \ldots, m$ und $j = 1, \ldots, n$.\\
+Ist $A$ eine mxn-Matrix, so sagen wir $A \in \mathbb{R}^{mxn}$. mxn nennen wir auch den \textbf{Typ} oder die \textbf{Form} der Matrix.
+\end{definition}
+
+\begin{definition}[Quadratische Matrix] Eine Matrix heißt \textbf{quadratisch}, wenn sie gleich viele Zeilen wie Spalten hat.
+\end{definition}
+
+\section{Rechnen mit Matrizen}
+Wir stellen zunächst fest: Jeder Vektor (so wie wir bisher Vektoren kennen) ist auch eine Matrix.\\
+\begin{bsp}
+$\vec{v} = \begin{pmatrix} 1 \\ 2 \\ 4 \end{pmatrix}$ ist eine 3x1-Matrix.
+\end{bsp}
+
+Andersherum besteht jede Matrix aus einem oder mehreren Spalten- bzw. Zeilenvektoren.\\
+\begin{bsp}
+$A = \begin{pmatrix} 1 & 2 & 3 & 4 \\ 5 & 6 & 7 & 8 \end{pmatrix}$ besteht aus den \textbf{Zeilenvektoren} $\begin{pmatrix} 1 & 2 & 3 & 4 \end{pmatrix}$ und $\begin{pmatrix} 5 & 6 & 7 & 8 \end{pmatrix}$, bzw. aus den \textbf{Spaltenvektoren} $\begin{pmatrix} 1 \\ 5 \end{pmatrix}$, $\begin{pmatrix} 2 \\ 6 \end{pmatrix}$, $\begin{pmatrix} 3 \\ 7 \end{pmatrix}$ und $\begin{pmatrix} 4 \\ 8 \end{pmatrix}$
+\end{bsp}
+
+\subsection{Multiplikation von Matrizen mit einem Skalar}
+\textbf{Regel:} Eine Matrix $A$ wird mit einem Skalar multipliziert, indem man jedes einzelne Element mit dem Skalar multipliziert. 
+
+\subsection{Addition von Matrizen}
+\label{matradd}
+\textbf{Regel:} Zwei Matrizen $A$ und $B$ vom selben Typ werden addiert, indem wir die entsprechenden Elemente addieren.\\
+
+\begin{definition}[Nullmatrix] Die Matrix $0 = \begin{pmatrix} 0 & \cdots & 0 \\ \vdots & \ddots & \vdots \\ 0 & \cdots & 0 \end{pmatrix}$ mit $a_{ij} = 0$ für alle i,j heißt \textbf{Nullmatrix}.
+\end{definition}
+Es gilt: $A + 0 = 0 + A = A$ wenn $A$ und $0$ vom selben Typ sind.\\
+\textbf{Achtung:} Im Folgenden wird für die Zahl Null und die Nullmatrix das gleiche Symbol "`0"' verwendet!
+
+
+\subsection{Multiplikation von Matrizen}
+\label{matrmulti}
+\textbf{Regel:} $A \in \mathbb{R}^{lxm}, B \in \mathbb{R}^{mxn}$\\
+Das Produkt ist $AB = C \in \mathbb{R}^{lxn}$\\
+Die Elemente $c_{ij}$ erhält man, indem man das Skalarprodukt des i-ten Zeilenvektors von $A$ mit dem j-ten Spaltenvektor von $B$ berechnet.\\
+\begin{definition}[Einheitsmatrix] Die nxn Matrix $\begin{pmatrix} 1 & 0 & 0 & \cdots & 0 \\ 0 & 1 & 0 & \vdots & 0 \\ \vdots & & \ddots & 0 & \vdots \\ 0 & \cdots & 0 & 1 & 0 \\ 0 & \cdots & & 0 & 1 \end{pmatrix}$ mit den Einträgen $c_{ij} = \begin{cases} 1 & i = j \\ 0 & i \neq j\end{cases}$ heißt \textbf{Einheitsmatrix}.
+\end{definition}
+\textbf{Achtung:} Das Produkt $AB$ ist nur definiert, wenn die Anzahl der Spalten von $A$ gleich der Anzahl der Zeilen von $B$ ist.\\
+
+\subsection{Rechengesetze der Matrizenrechnung:}
+Gegeben seien die Matrizen $A$, $B$ und $C$ vom jeweils passenden Typ.
+\begin{itemize}
+	\item Assoziativgesetz:\\
+	$(AB) \cdot C = A \cdot (BC)$\\
+	$(A+B) + C = A+ (B + C)$
+	\item Distributivgesetze:\\
+	$(A+B) \cdot C = AC + BC$\\
+	$A \cdot (B+C) = AB + AC$
+	\item $(\lambda A)(\mu B) = (\lambda \mu)(AB)$
+	\item $A \cdot (\lambda B) = \lambda AB$
+	\item $A \cdot E_n = E_n \cdot A = A \Rightarrow E_n$ ist das neutrale Element bzgl ($\cdot$)
+	\item $A + 0 = 0 + A = A \Rightarrow 0$ ist das neutrale Element bzgl (+)
+	\item Das Kommutativgesetz gilt bei der Multiplikation von Matrizen im Allgemeinen \textbf{nicht}!
+\end{itemize}
+
+\subsection{Determinante von 2x2-Matrizen}
+\begin{definition}[Determinante] Die \textbf{Determinante} einer 2x2 Matrix $\begin{pmatrix} a & b \\ c & d \end{pmatrix}$ ist eine Zahl $\in \mathbb{R}$ gegeben durch $det(A) = ad - bc$
+\end{definition}
+
+\section{Affine Abbildungen in der Ebene}
+\begin{definition}[Affine Abbildung] Eine \textbf{affine Abbildung} im $\mathbb{R}^2$ ist gegeben durch 
+\begin{align*}
+\alpha: \vec{x'} = A \cdot \vec{x} + b
+\end{align*}
+\end{definition}
+$A$ ist eine 2x2-Matrix mit $det(A) \neq 0$ und $\vec{b}$ ist ein Vektor mit zwei Koordinaten. Diese Darstellung heißt \textbf{Matrizendarstellung einer affinen Abbildung}. Andere Darstellungsmöglichkeiten sind die \textbf{Vektordarstellung einer affinen Abbildung}:
+\begin{align*}
+\alpha: \begin{pmatrix} x \\ y \end{pmatrix}' = \begin{pmatrix} a \\ c \end{pmatrix} \cdot x + \begin{pmatrix} b \\ d \end{pmatrix} \cdot y + \begin{pmatrix} e \\ f \end{pmatrix}
+\end{align*}
+oder die \textbf{Koordinatendarstellung einer affinen Abbildung}
+\begin{align*}
+\alpha: \begin{array}{l} x' = ax + by+ e \\ y' = cx + dy + f \end{array}
+\end{align*}
+Bemerkung: Jede affine Abbildung ist durch $A$ und $\vec{b}$ festgelegt. Sie bildet den Punkt (x, y) mit dem Ortsvektor $\vec{x} = \begin{pmatrix} x \\ y \end{pmatrix}$ auf den Punkt (x', y') mit dem Ortsvektor $\vec{x'} = \begin{pmatrix} x' \\ y' \end{pmatrix}$ ab.\\
+Feststellung: Jede affine Abbildung ist eindeutig festgelegt durch die Angabe von drei Urbildpunkten und drei zugehörigen Bildpunkten, solange diese nicht auf einer Geraden liegen.\\
+\begin{definition} P heißt \textbf{Urbildpunkt} und P \textbf{Bildpunkt}. \end{definition}
+
+\textbf{Eigenschaften einer affinen Abbildung:}
+\begin{enumerate}
+	\item geradentreu, d.h. Geraden werden auf Geraden abgebildet
+	\item parallelentreu, d.h. zueinander parallele Geraden werden auf zueinander parallele Geraden abgebildet
+	\item umkehrbar, d.h. zu jedem Bildpunkt gibt es genau einen Urbildpunkt
+	\item teilverhältnistreu
+\end{enumerate}
+\textbf{Folgerungen}:
+\begin{enumerate}
+	\item Dreiecke werden auf Dreiecke abgebildet
+	\item Parallelogramme auf Parallelogramme
+	\item Mittelpunkte von Strecken auf Mittelpunkte von Strecken
+\end{enumerate}
+\textbf{Eigenschaften, die affine Abbildungen haben können, aber nicht müssen:}
+\begin{itemize}
+	\item längentreu (zu überprüfen an einer Zeichnung)
+	\item winkeltreu (zu überprüfen an einer Zeichnung)
+	\item flächeninhaltstreu $\Leftrightarrow |det(A)| = 1$
+	\item orientierungstreu $\Leftrightarrow det(A) > 0$
+	\item orientierungsumkehrend $\Leftrightarrow det(A) < 0$
+	\item Fixpunkte haben, d.h. $P = P'$
+	\item Fixpunktgeraden haben (Gerade, auf der nur Fixpunkte liegen $\rightarrow$ Spiegelung an dieser Geraden)
+	\item Fixgeraden haben (eine Fixgerade ist eine Gerade, die wieder auf sich selbst abgebildet wird. Dabei können die einzelnen Punkte der Gerade aber untereinander vertauscht werden, es ist also keine Fix\textbf{punkt}gerade
+\end{itemize}
+
+\textbf{Spezielle affine Abbildungen:}
+\begin{itemize}
+	\item Drehung um $\vec{p}$ mit dem Winkel $\phi$ \\
+		\begin{itemize}
+			\item flächeninhaltstreu
+			\item orientierungstreu 
+			\item längentreu
+			\item winkeltreu
+		\end{itemize}
+		Allgemeine Form: 
+		\begin{align*}
+			\alpha: \vec{x'} = \begin{pmatrix} \cos{\phi} & - \sin{\phi} \\ \sin{\phi} & \cos{\phi} \end{pmatrix} \vec{x} + 2\vec{p}
+		\end{align*}
+	\item zentrische Streckung von einem Streckzentrum Z mit dem Streckfaktor k
+		\begin{itemize}
+			\item orientierungstreu
+			\item winkeltreu
+		\end{itemize}
+		Allgemeine Form:
+		\begin{align*}
+			\alpha: \vec{x'} = \begin{pmatrix} k & 0 \\ 0 & k \end{pmatrix} \vec{x} + \vec{z}
+		\end{align*}
+		wobei $\vec{z}$ das Streckzentrum ist und $k$ der Streckfaktor.
+	\item Spiegelung an einer Achse / Gerade
+		\begin{itemize}
+			\item flächeninhaltstreu
+			\item orientierungsumkehrend
+			\item längentreu
+			\item winkeltreu
+		\end{itemize}
+		Allgemeine Form einer Spiegelung an einer Ursprungsgeraden, die mit der x-Achse den Winkel $\phi$ einschließt:
+		\begin{align*}
+			\alpha: \vec{x'} = \begin{pmatrix} \cos{2\phi} & \sin{2\phi} \\ \sin{2\phi} & - \cos{2\phi} \end{pmatrix} \vec{x}
+		\end{align*}
+	\item Verschiebung um einen Vektor $\vec{v}$
+		\begin{itemize}
+			\item flächeninhaltstreu
+			\item winkeltreu
+			\item längentreu
+			\item orientierungstreu
+		\end{itemize}
+		Allgemeine Form:
+		\begin{align*}
+			\alpha: \vec{x'} = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} \vec{x} + \vec{v}
+		\end{align*}
+		wobei um den Vektor $\vec{v}$ verschoben wird.
+	\item Scherung an einer Geraden $g$ mit dem Winkel $\phi$
+		\begin{itemize}
+			\item flächeninhaltstreu
+			\item orientierungstreu
+		\end{itemize}
+		Scherung an der x-Achse mit Winkel $\phi$
+		\begin{align*}
+			\alpha: \vec{x'} = \begin{pmatrix} 1 & \tan{\phi} \\ 0 & 1 \end{pmatrix} \vec{x}
+		\end{align*}
+	\item Punktspiegelung \\
+		siehe Drehung um einen Punkt (mit 180°)
+\end{itemize}
+
+\subsection{Affine Abbildungen rechnerisch bestimmen}
+Gegeben sind drei Urbildpunkte und die entsprechenden Bildpunkte. \\
+Eine affine Abbildung ist gegeben durch
+\begin{align*}
+\alpha: \vec{x'} = A\vec{x} + \vec{c} \Rightarrow \left| \begin{matrix} x' = a_{11} x + a_{12} y + c_1 \\ y' = a_{21} x + a_{22} y + c_2 \end{matrix} \right|
+\end{align*}
+Durch einsetzen der Urbild- bzw. der Bildpunkte erhält man zwei LGS mit je drei Gleichungen und drei Unbekannten, die man genau dann eindeutig lösen kann, wenn die Abbildung affin ist.
+
+\subsection{Bestimmung der Fixpunkte und Fixpunktgeraden}
+Gegeben sei eine affine Abbildung durch $\alpha: \vec{x'} = A \vec{x} + \vec{c}$. \\
+Ansatz: $\vec{x'} = \vec{x}$ \\
+Zu lösen ist also
+\begin{align*}
+	\begin{pmatrix} x \\ y \end{pmatrix} = A \begin{pmatrix} x \\ y \end{pmatrix}
+\end{align*}
+Bei einer eindeutigen Lösung gibt es einen Fixpunkt, gibt es unendlich viele Lösungen handelt es sich um eine Fixpunktgerade.
+
+\subsection{Verketten von Abbildungen}
+Zwei Abbildungen verketten heißt, zwei Abbildungen hintereinander ausführen. $\beta \circ \alpha$ bedeutet, dass zuerst $\alpha$ ausgeführt wird, und danach $\beta$. \textbf{Achtung}: In der Regel gilt $\alpha \circ \beta \neq \beta \circ \alpha$!\\
+Die neue Abbildungsmatrix der verketteten Abbildung lautet im Fall $\beta \circ \alpha$: $B \cdot A$ und im Fall $\alpha \circ \beta$: $A \cdot B$.\\
+Eine Verkettung von zwei Abbildungen ist genau dann eine affine Abbildung, wenn auch die beiden Ausgangsabbildungen affine Abbildungen sind. Es gilt außerdem:
+\begin{satz}[Determinantensatz]
+\[ \det(AB) = \det(A) \cdot \det(B) \]
+\end{satz}
+
+\subsection{Umkehrabbildungen}
+\begin{definition}[Umkehrabbildung und inverse Matrix]
+Wir definieren: $\alpha^{-1}$ \textbf{Umkehrabbildung} von $\alpha$ $\Leftrightarrow \alpha^{-1} \circ \alpha = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} = id$. Die zugehörige Umkehrmatrix heißt \textbf{inverse Matrix} und wird mit $A^{-1}$ bezeichnet. Es gilt $A^{-1} \cdot A = A \cdot A^{-1}$
+\end{definition}
+\begin{satz}
+Affine Abbildungen sind umkehrbar.
+\end{satz}
+Im Falle von 2x2 Matrizen kann man die inverse Matrix einer Matrix $A = \begin{pmatrix} a_1 & b_1 \\ a_2 & b_2 \end{pmatrix}$ mit der Formel
+\[A^{-1} = \frac{1}{\det(A)} \begin{pmatrix} b_2 & - b_1 \\ -a_2 & a_1 \end{pmatrix}\]
+berechnen.
+
+\subsection{Affine Abbildungen und Flächenänderung}
+\begin{satz}
+Sei $\det(A) = k$. Dann ist $|k|$ der Flächenänderungsfaktor jeder affinen Abbildung $\alpha: \vec{x'} = A\vec{x} + \vec{c}$
+\end{satz}
+
+\subsection{Eigenwerte und Eigenvektoren, Fixgeraden}
+\begin{definition}[Eigenwert]
+Ein Skalar $\lambda$ heißt \textbf{Eigenwert der Matrix A} wenn es mindestens einen Vektor $\vec{v}$ gibt, so dass gilt
+\[A\vec{v} = \lambda\vec{v} \]
+\end{definition}
+\begin{satz}
+Die Eigenwerte der Matrix A sind genau die Lösungen der Gleichung
+\[ \det(A-\lambda E) = 0 \]
+\end{satz}
+Es schließt sich logischer Weise an
+\begin{definition}[Eigenvektoren]
+Ein Vektor $\vec{v}$ heißt \textbf{Eigenvektor der Matrix A zum Eigenwert $\lambda$}, wenn gilt
+\[A\vec{v} = \lambda\vec{v} \]
+\end{definition}
+\begin{satz}
+Die Eigenvektoren sind genau die Lösungsvektoren von
+\[ \det(A-\lambda E) \vec{v} = \vec{0} \]
+\end{satz}
+\begin{definition}[Fixgerade]
+Eine Fixgerade ist eine Gerade, die durch eine Abbildung $\alpha$ auf sich selbst abgebildet wird. Es gilt also
+\begin{align*}
+P \in g \Rightarrow P' \in g
+\end{align*}
+\end{definition}
+\textbf{Achtung}: Dies bedeutet nicht, dass jeder Punkt der Geraden auf sich selbst abgebildet werden muss. Wird jeder Punkt einer Geraden auf sich selbst abgebildet, nennt man diese Gerade Fixpunktgerade. Fixpunktgeraden sind Fixgeraden.\\
+Sei $\alpha: \vec{x'} = A\vec{x} + \vec{c}$ eine affine Abbildung.\\
+Hat die Abbildung einen oder mehrere Fixpunkte, so ist es einfach, die Fixgeraden zu bestimmen. Die Fixgeraden sind in diesen Fällen nämlich genau die Geraden mit den Fixvektoren als Stützvektoren und den Eigenvektoren der Matrix $A$ als Richtungsvektoren.\\
+Deutlich komplizierter wird die Bestimmung der Fixgeraden, wenn die Abbildung keine Fixpunkte hat.\\
+Ist $g: \vec{x} = \vec{p} + t \vec{u}$ eine Fixgerade, so muss gelten
+\[ \vec{p'} = A\vec{p} + \vec{c} \wedge \vec{p'} = \vec{p} + t \vec{u} \]
+Dies wiederum führt uns zur so genannten \textbf{Stützpunktgleichung}:
+\[A\vec{p} - \vec{p} = t \vec{u} \]
+Alle Vektoren $\vec{p}$, die diese Gleichung erfüllen, sind Stützvektoren von Fixgeraden der Abbildung.
+
+\subsection{Affine Abbildungen mit Fixpunkt 0}
+$\alpha: \vec{x'} = A\vec{x}$\\
+Wir unterscheiden drei Fälle:
+\begin{enumerate}
+\item $A$ besitzt zwei verschiedene Eigenwert $\lambda_1, \lambda_2$ $\Rightarrow \alpha$ ist i.A. eine Euleraffinität
+\item $A$ besitzt einen Eigenwert $\lambda$ $\Rightarrow \alpha$ ist i.A. eine Streckscherung
+\item $A$ besitzt keinen Eigenwert $\Rightarrow \alpha$ ist i.A. eine Affindrehung
+\end{enumerate}
+\begin{definition}[Euler-Affinität]
+Eine affine Abbildung, die zwei Eigenwerte besitzt, nennt man \textbf{Euler-Affinität}.
+\end{definition}
+\begin{definition}
+Eine affine Abbildung für die gilt
+\begin{enumerate}
+\item $P \in g_{2} \Rightarrow P = P'$
+\item $P \in g_{2} \Rightarrow \vec{PP'} \parallel g_{1}$
+\item $\vec{G_{2}P'} = \lambda_1 \vec{G_{2}P}$
+\end{enumerate}
+heißt \textbf{Parallelstreckung} an der Streckachse $g_{2}$ parallel zu $g_{1}$ mit dem Streckfaktor $\lambda_1$
+\end{definition}
+\begin{satz}
+Eine Euler-Affinität ist eine Linearkombination aus zwei Parallelstreckungen
+\end{satz}
+
+\section{Parallelprojektion}
+\begin{definition}[Projektion]
+Eine \textbf{Projektion} ist eine Abbildung des Raumes in eine Ebene (Projektionsebene). Die Gerade zwischen Punkt $P$ und dem Bildpunkt $P'$ der Projektion heißt \textbf{Projektionsgerade}. Sind alle Projektionsgeraden parallel, so spricht man von einer \textbf{Parallelprojektion}.
+\end{definition}
+\begin{satz}
+Die Abbildungsmatrix einer Parallelprojektion hat als Spalten die Ortsvektoren der Bildpunkte der Einheitsvektoren.
+\end{satz}
+
+Nun, wie berechnet man eine solche Projektionsmatrix ( = Abbildungsmatrix einer Projektion)? \\
+Dies ist ganz einfach, denn nach obigem Satz muss man nur die Bildpunkte der Einheitsvektoren bestimmen. Dazu nimmt man den ersten Einheitsvektor als Stützvektor einer Geraden $g$ und den Richtungsvektor der Projektionsgeraden als Richtungsvektor von $g$. Dann schneidet man die Gerade $g$ mit der Projektionsebene und erhält den Schnittpunkt $S$, der gleichzeitig der Bildpunkt $P'$ ist. Analog verfährt man mit dem zweiten und dritten Einheitsvektor, wonach man die Projektionsmatrix bestimmen kann.
+
+\section{Prozessmatrizen und Bedarfsmatrizen}
+Prozessmatrizen dienen dazu, den Verlauf eines Prozesses über mehrere Schritte zu bestimmen. Ein Spezialfall der Prozessmatrizen sind die Bedarfsmatrizen. Mit ihnen lässt sich z.B. die Rohstoffmenge berechnen, die zur Herstellung von Produkten benötigt wird. Wir veranschaulichen dies an einem
+\begin{bsp}
+Seien $D_1, D_2$ zwei verschiedene Dünger und $R_1, R_2, R_3$ drei verschiedene Rohstoffe, die zur Herstellung dieser Dünger verwendet werden. Den Bedarf an Rohstoffen pro Kilogramm Dünger kann man folgender Tabelle entnehmen:\\
+\begin{tabular}{c|c|c|c|}
+ & $R_1 (y_1)$ & $R_2 (y_2)$ & $R_3 (y_3)$ \\
+\hline
+$D_1 (x_1)$ & 0.5 & 0.3 & 0.2\\
+\hline
+$D_2 (x_2)$ & 0.2 & 0.2 &0.4 \\
+\end{tabular}\\
+Aus dieser Tabelle lässt sich das folgende LGS erstellen:
+\begin{align*}
+y_1= 0.5x_1 + 0.2x_2\\
+y_2= 0.3 x_1 + 0.2x_2\\
+y_3= 0.2x_1 + 0.4x_2
+\end{align*}
+Dieses LGS sieht in Matrizenschreibweise wiederum so aus:
+\begin{align*}
+\begin{pmatrix} y_1 \\ y_2 \\ y_3\end{pmatrix} = \underbrace{\begin{pmatrix} 0.5 & 0.2 \\ 0.3 & 0.2 \\ 0.2 & 0.4 \end{pmatrix}}_{\textrm{Bedarfsmatrix}} \cdot \begin{pmatrix} x_1 \\ x_2 \end{pmatrix}
+\end{align*}
+Mithilfe dieser Matrix lässt sich nun also z.B. ausrechnen, wie viel Kilogramm von jedem Rohstoff zur Herstellung von je einer Tonne Dünger benötigt werden.
+\end{bsp}
+
+Prozessmatrizen funktionieren ähnlich wie die Bedarfsmatrizen, nur dass sie stattdessen einen Prozess beschreiben, zum Beispiel die Entwicklung einer Maikäferpopulation über mehrere Monate. Als Beispiel sei die folgende Aufgabe genannt:
+\begin{bsp}
+Die Entwicklung einer weiblichen Käferpopulation kann modellhaft wie folgt beschrieben werden: Ein Weibchen legt 20 Eier und stirb kurz darauf. Nach einem Monat entwickeln sich aus den Eiern Larven, von denen aber nur 30\% überleben. Nach einem weiteren Monat verpuppen sich 40\% der Larven und werden zu weiblichen Käfern, die wieder 20 Eier legen.\\
+\quad\\
+Aus diesem Aufgabentext lässt sich folgende Tabelle entnehmen:\\
+\begin{tabular}{l|ccc}
+nach / von & K & E & L\\
+\hline
+K & 0 & 0 & 2/5\\
+E & 20 & 0 & 0\\
+L & 0 &3/10 & 0
+\end{tabular} \\
+Aus dieser Tabelle wiederum folgt sofort folgende Matrix:
+\[ A = \underbrace{\begin{pmatrix} 0 & 0 &\frac{2}{5}\\ 20 & 0 & 0 \\ 0 & \frac{3}{10} & 0 \end{pmatrix}}_{\textrm{Prozessmatrix}} \]
+\end{bsp}
+Multipliziert man die Matrix mit einem Ausgangsvektor, so erhält man die Verteilung nach einer Zeiteinheit. Möchte man die Verteilung nach $n$ Zeiteinheiten errechnen, muss man die Matrix $n$-mal mit dem Vektor multiplizieren, bzw. die Matrix $A^n$ mit dem Vektor multiplizieren.

@@ -1,0 +1,840 @@
+htfcss: cmti  font-style: italic;
+htfcss: cmitt font-family: monospace; font-style: italic;
+htfcss: cmtt font-family: monospace;
+htfcss: cmsl font-style: oblique;
+htfcss: cmbxti  font-weight: bold; font-style: italic;
+htfcss: cmtt font-family: monospace;
+htfcss: cmmi font-style: italic;
+htfcss: cmmib font-style: italic; font-weight: bold;
+htfcss: cmbx  font-weight: bold;
+htfcss: cmbxsl  font-weight: bold; font-style: oblique;
+File: math1201.html
+File: math1201.css
+File: math1201.tmp
+Font_Class(1,"1"): <img  src="" alt="" class="%s-%dx-x-%x" />
+Css: p.noindent { text-indent: 0em }
+Css: td p.noindent { text-indent: 0em; margin-top:0em; }
+Css: p.nopar { text-indent: 0em; }
+Css: p.indent{ text-indent: 1.5em }
+Css: @media print {div.crosslinks {visibility:hidden;}}
+Css: a img { border-top: 0; border-left: 0; border-right: 0; }
+Font_Css("4"): .small-caps{font-variant: small-caps; }
+Font_Css("10"): .htf-cmbx {font-weight: bold; font-style:normal;}
+Font_Css("12"): .htf-calligraphy {font-family:cursive}
+Font_Css("14"): .htf-italic {font-style: italic;}
+Font_Css("16"): .htf-bold {font-weight: bold;}
+Font_Css("12"): .htf-calligraphy-bold {font-family:cursive ; font-weight: bold; }
+Css: center { margin-top:1em; margin-bottom:1em; }
+Css: td center { margin-top:0em; margin-bottom:0em; }
+Css: .Canvas { position:relative; }
+Css: img.math{vertical-align:middle;}
+Css: li p.indent { text-indent: 0em }
+Css: .enumerate1 {list-style-type:decimal;}
+Css: .enumerate2 {list-style-type:lower-alpha;}
+Css: .enumerate3 {list-style-type:lower-roman;}
+Css: .enumerate4 {list-style-type:upper-alpha;}
+Css: div.newtheorem { margin-bottom: 2em; margin-top: 2em;}
+Css: .obeylines-h,.obeylines-v {white-space: nowrap; }
+Css: div.obeylines-v p { margin-top:0; margin-bottom:0; }
+Css: .overline{ text-decoration:overline; }
+Css: .overline img{ border-top: 1px solid black; }
+Css: td.displaylines {text-align:center; white-space:nowrap;}
+Css: .centerline {text-align:center;}
+Css: .rightline {text-align:right;}
+Css: div.verbatim {font-family: monospace; white-space: nowrap; }
+Css: table.verbatim {width:100%;}
+Css: .fbox {padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
+Css: div.center div.fbox {text-align:center; clear:both; padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
+Css: table.minipage{width:100%;}
+Css: div.center, div.center div.center {text-align: center; margin-left:1em; margin-right:1em;}
+Css: div.center div {text-align: left;}
+Css: div.flushright, div.flushright div.flushright {text-align: right;}
+Css: div.flushright div {text-align: left;}
+Css: div.flushleft {text-align: left;}
+Css: .underline{ text-decoration:underline; }
+Css: .underline img{ border-bottom: 1px solid black; margin-bottom:1pt; }
+Css: .framebox-c, .framebox-l, .framebox-r { padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
+Css: .framebox-c {text-align:center;}
+Css: .framebox-l {text-align:left;}
+Css: .framebox-r {text-align:right;}
+Css: span.thank-mark{ vertical-align: super }
+Css: span.footnote-mark sup.textsuperscript, span.footnote-mark a sup.textsuperscript{ font-size:80%; }
+Css: div.tabular, div.center div.tabular {text-align: center; margin-top:0.5em; margin-bottom:0.5em; }
+Css: table.tabular td p{margin-top:0em;}
+Css: table.tabular {margin-left: auto; margin-right: auto;}
+Css: div.td00{ margin-left:0pt; margin-right:0pt; }
+Css: div.td01{ margin-left:0pt; margin-right:5pt; }
+Css: div.td10{ margin-left:5pt; margin-right:0pt; }
+Css: div.td11{ margin-left:5pt; margin-right:5pt; }
+Css: table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }
+Css: td.td00{ padding-left:0pt; padding-right:0pt; }
+Css: td.td01{ padding-left:0pt; padding-right:5pt; }
+Css: td.td10{ padding-left:5pt; padding-right:0pt; }
+Css: td.td11{ padding-left:5pt; padding-right:5pt; }
+Css: table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }
+Css: .hline hr, .cline hr{ height : 1px; margin:0px; }
+Css: .tabbing-right {text-align:right;}
+Css: span.TEX {letter-spacing: -0.125em; }
+Css: span.TEX span.E{ position:relative;top:0.5ex;left:-0.0417em;}
+Css: a span.TEX span.E {text-decoration: none; }
+Css: span.LATEX span.A{ position:relative; top:-0.5ex; left:-0.4em; font-size:85%;}
+Css: span.LATEX span.TEX{ position:relative; left: -0.4em; }
+Css: div.float img, div.float .caption {text-align:center;}
+Css: div.figure img, div.figure .caption {text-align:center;}
+Css: .marginpar {width:20%; float:right; text-align:left; margin-left:auto; margin-top:0.5em; font-size:85%; text-decoration:underline;}
+Css: .marginpar p{margin-top:0.4em; margin-bottom:0.4em;}
+Css: table.equation {width:100%;}
+Css: .equation td{text-align:center; }
+Css: td.equation { margin-top:1em; margin-bottom:1em; } 
+Css: td.equation-label { width:5%; text-align:center; }
+Css: td.eqnarray4 { width:5%; white-space: normal; }
+Css: td.eqnarray2 { width:5%; }
+Css: table.eqnarray-star, table.eqnarray {width:100%;}
+Css: div.eqnarray{text-align:center;}
+Css: div.array {text-align:center;}
+Css: div.pmatrix {text-align:center;}
+Css: table.pmatrix {width:100%;}
+Css: span.pmatrix img{vertical-align:middle;}
+Css: div.pmatrix {text-align:center;}
+Css: table.pmatrix {width:100%;}
+Css: img.cdots{vertical-align:middle;}
+Css: .partToc a, .partToc, .likepartToc a, .likepartToc {line-height: 200%; font-weight:bold; font-size:110%;}
+Css: .chapterToc a, .chapterToc, .likechapterToc a, .likechapterToc, .appendixToc a, .appendixToc {line-height: 200%; font-weight:bold;}
+Css: .caption td.id{font-weight: bold; white-space: nowrap; }
+Css: table.caption {text-align:center;}
+Css: h1.partHead{text-align: center}
+Css: p.bibitem { text-indent: -2em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }
+Css: p.bibitem-p { text-indent: 0em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }
+Css: .paragraphHead, .likeparagraphHead { margin-top:2em; font-weight: bold;}
+Css: .subparagraphHead, .likesubparagraphHead { font-weight: bold;}
+Css: .quote {margin-bottom:0.25em; margin-top:0.25em; margin-left:1em; margin-right:1em; text-align:justify;}
+Css: .verse{white-space:nowrap; margin-left:2em}
+Css: div.maketitle {text-align:center;}
+Css: h2.titleHead{text-align:center;}
+Css: div.maketitle{ margin-bottom: 2em; }
+Css: div.author, div.date {text-align:center;}
+Css: div.thanks{text-align:left; margin-left:10%; font-size:85%; font-style:italic; }
+Css: div.author{white-space: nowrap;}
+Font_Size: 12
+Css: .quotation {margin-bottom:0.25em; margin-top:0.25em; margin-left:1em; }
+Css: h1.partHead{text-align: center}
+Css: .abstract p {margin-left:5%; margin-right:5%;}
+Css: table.abstract {width:100%;}
+Css: .figure img.graphics {margin-left:10%;}
+Css: .equation td{text-align:center; }
+Css: .equation-star td{text-align:center; }
+Css: table.equation-star { width:100%; }
+Css: table.equation { width:100%; }
+Css: table.align, table.alignat, table.xalignat, table.xxalignat, table.flalign {width:100%; margin-left:5%; white-space: nowrap;}
+Css: table.align-star, table.alignat-star, table.xalignat-star, table.flalign-star {margin-left:auto; margin-right:auto; white-space: nowrap;}
+Css: td.align-label { width:5%; text-align:center; }
+Css: td.align-odd { text-align:right; padding-right:0.3em;}
+Css: td.align-even { text-align:left; padding-right:0.6em;}
+Css: table.multline, table.multline-star {width:100%;}
+Css: td.gather-star, td.gather1 {text-align:center; }
+Css: table.gather, table.gather-star {width:100%;}
+--- needs --- math1201.idv[2] ==> math12010x.png ---
+--- needs --- math1201.idv[3] ==> math12011x.png ---
+--- needs --- math1201.idv[4] ==> math12012x.png ---
+--- needs --- math1201.idv[5] ==> math12013x.png ---
+--- needs --- math1201.idv[6] ==> math12014x.png ---
+--- needs --- math1201.idv[8] ==> math12015x.png ---
+--- needs --- math1201.idv[9] ==> math12016x.png ---
+--- needs --- math1201.idv[10] ==> math12017x.png ---
+--- needs --- math1201.idv[11] ==> math12018x.png ---
+--- needs --- math1201.idv[12] ==> math12019x.png ---
+--- needs --- math1201.idv[14] ==> math120110x.png ---
+--- needs --- math1201.idv[15] ==> math120111x.png ---
+--- needs --- math1201.idv[17] ==> math120112x.png ---
+--- needs --- math1201.idv[18] ==> math120113x.png ---
+--- needs --- math1201.idv[19] ==> math120114x.png ---
+--- needs --- math1201.idv[20] ==> math120115x.png ---
+--- needs --- math1201.idv[21] ==> math120116x.png ---
+--- needs --- math1201.idv[22] ==> math120117x.png ---
+--- needs --- math1201.idv[24] ==> math120118x.png ---
+--- needs --- math1201.idv[25] ==> math120119x.png ---
+--- needs --- math1201.idv[26] ==> math120120x.png ---
+--- needs --- math1201.idv[27] ==> math120121x.png ---
+--- needs --- math1201.idv[29] ==> math120122x.png ---
+--- needs --- math1201.idv[30] ==> math120123x.png ---
+File: C:/abbildungen/int1.jpg
+File: C:/abbildungen/int2.jpg
+--- needs --- math1201.idv[32] ==> math120124x.png ---
+--- needs --- math1201.idv[33] ==> math120125x.png ---
+--- needs --- math1201.idv[34] ==> math120126x.png ---
+--- needs --- math1201.idv[35] ==> math120127x.png ---
+--- needs --- math1201.idv[36] ==> math120128x.png ---
+--- needs --- math1201.idv[38] ==> math120129x.png ---
+--- needs --- math1201.idv[39] ==> math120130x.png ---
+--- needs --- math1201.idv[40] ==> math120131x.png ---
+--- needs --- math1201.idv[41] ==> math120132x.png ---
+--- needs --- math1201.idv[42] ==> math120133x.png ---
+--- needs --- math1201.idv[43] ==> math120134x.png ---
+--- needs --- math1201.idv[44] ==> math120135x.png ---
+--- needs --- math1201.idv[45] ==> math120136x.png ---
+--- needs --- math1201.idv[46] ==> math120137x.png ---
+--- needs --- math1201.idv[47] ==> math120138x.png ---
+--- needs --- math1201.idv[48] ==> math120139x.png ---
+--- needs --- math1201.idv[49] ==> math120140x.png ---
+--- needs --- math1201.idv[50] ==> math120141x.png ---
+--- needs --- math1201.idv[51] ==> math120142x.png ---
+--- needs --- math1201.idv[52] ==> math120143x.png ---
+--- needs --- math1201.idv[53] ==> math120144x.png ---
+--- needs --- math1201.idv[54] ==> math120145x.png ---
+--- needs --- math1201.idv[55] ==> math120146x.png ---
+--- needs --- math1201.idv[57] ==> math120147x.png ---
+--- needs --- math1201.idv[58] ==> math120148x.png ---
+--- needs --- math1201.idv[59] ==> math120149x.png ---
+--- needs --- math1201.idv[60] ==> math120150x.png ---
+--- needs --- math1201.idv[61] ==> math120151x.png ---
+--- needs --- math1201.idv[62] ==> math120152x.png ---
+--- needs --- math1201.idv[63] ==> math120153x.png ---
+--- needs --- math1201.idv[64] ==> math120154x.png ---
+--- needs --- math1201.idv[66] ==> math120155x.png ---
+--- needs --- math1201.idv[67] ==> math120156x.png ---
+--- needs --- math1201.idv[68] ==> math120157x.png ---
+--- needs --- math1201.idv[69] ==> math120158x.png ---
+--- needs --- math1201.idv[71] ==> math120159x.png ---
+--- needs --- math1201.idv[72] ==> math120160x.png ---
+--- needs --- math1201.idv[74] ==> math120161x.png ---
+--- needs --- math1201.idv[75] ==> math120162x.png ---
+--- needs --- math1201.idv[76] ==> math120163x.png ---
+--- needs --- math1201.idv[77] ==> math120164x.png ---
+--- needs --- math1201.idv[78] ==> math120165x.png ---
+--- needs --- math1201.idv[79] ==> math120166x.png ---
+--- needs --- math1201.idv[81] ==> math120167x.png ---
+--- needs --- math1201.idv[82] ==> math120168x.png ---
+--- needs --- math1201.idv[83] ==> math120169x.png ---
+--- needs --- math1201.idv[84] ==> math120170x.png ---
+--- needs --- math1201.idv[85] ==> math120171x.png ---
+--- needs --- math1201.idv[86] ==> math120172x.png ---
+--- needs --- math1201.idv[88] ==> math120173x.png ---
+--- needs --- math1201.idv[89] ==> math120174x.png ---
+--- needs --- math1201.idv[90] ==> math120175x.png ---
+--- needs --- math1201.idv[91] ==> math120176x.png ---
+--- needs --- math1201.idv[92] ==> math120177x.png ---
+--- needs --- math1201.idv[93] ==> math120178x.png ---
+--- needs --- math1201.idv[95] ==> math120179x.png ---
+--- needs --- math1201.idv[96] ==> math120180x.png ---
+--- needs --- math1201.idv[97] ==> math120181x.png ---
+--- needs --- math1201.idv[98] ==> math120182x.png ---
+--- needs --- math1201.idv[99] ==> math120183x.png ---
+--- needs --- math1201.idv[100] ==> math120184x.png ---
+--- needs --- math1201.idv[102] ==> math120185x.png ---
+--- needs --- math1201.idv[103] ==> math120186x.png ---
+--- needs --- math1201.idv[104] ==> math120187x.png ---
+--- needs --- math1201.idv[105] ==> math120188x.png ---
+--- needs --- math1201.idv[106] ==> math120189x.png ---
+--- needs --- math1201.idv[108] ==> math120190x.png ---
+--- needs --- math1201.idv[110] ==> math120191x.png ---
+--- needs --- math1201.idv[111] ==> math120192x.png ---
+--- needs --- math1201.idv[112] ==> math120193x.png ---
+--- needs --- math1201.idv[113] ==> math120194x.png ---
+--- needs --- math1201.idv[114] ==> math120195x.png ---
+--- needs --- math1201.idv[116] ==> math120196x.png ---
+--- needs --- math1201.idv[117] ==> math120197x.png ---
+--- needs --- math1201.idv[118] ==> math120198x.png ---
+--- needs --- math1201.idv[120] ==> math120199x.png ---
+--- needs --- math1201.idv[121] ==> math1201100x.png ---
+--- needs --- math1201.idv[123] ==> math1201101x.png ---
+--- needs --- math1201.idv[124] ==> math1201102x.png ---
+--- needs --- math1201.idv[125] ==> math1201103x.png ---
+--- needs --- math1201.idv[126] ==> math1201104x.png ---
+--- needs --- math1201.idv[127] ==> math1201105x.png ---
+--- needs --- math1201.idv[128] ==> math1201106x.png ---
+--- needs --- math1201.idv[129] ==> math1201107x.png ---
+--- needs --- math1201.idv[130] ==> math1201108x.png ---
+--- needs --- math1201.idv[131] ==> math1201109x.png ---
+--- needs --- math1201.idv[132] ==> math1201110x.png ---
+--- needs --- math1201.idv[133] ==> math1201111x.png ---
+--- needs --- math1201.idv[134] ==> math1201112x.png ---
+--- needs --- math1201.idv[136] ==> math1201113x.png ---
+--- needs --- math1201.idv[137] ==> math1201114x.png ---
+--- needs --- math1201.idv[138] ==> math1201115x.png ---
+--- needs --- math1201.idv[139] ==> math1201116x.png ---
+--- needs --- math1201.idv[140] ==> math1201117x.png ---
+--- needs --- math1201.idv[141] ==> math1201118x.png ---
+--- needs --- math1201.idv[142] ==> math1201119x.png ---
+--- needs --- math1201.idv[143] ==> math1201120x.png ---
+--- needs --- math1201.idv[144] ==> math1201121x.png ---
+--- needs --- math1201.idv[145] ==> math1201122x.png ---
+--- needs --- math1201.idv[146] ==> math1201123x.png ---
+--- needs --- math1201.idv[147] ==> math1201124x.png ---
+--- needs --- math1201.idv[148] ==> math1201125x.png ---
+--- needs --- math1201.idv[149] ==> math1201126x.png ---
+--- needs --- math1201.idv[150] ==> math1201127x.png ---
+--- needs --- math1201.idv[151] ==> math1201128x.png ---
+--- needs --- math1201.idv[152] ==> math1201129x.png ---
+--- needs --- math1201.idv[153] ==> math1201130x.png ---
+--- needs --- math1201.idv[154] ==> math1201131x.png ---
+--- needs --- math1201.idv[155] ==> math1201132x.png ---
+--- needs --- math1201.idv[156] ==> math1201133x.png ---
+--- needs --- math1201.idv[157] ==> math1201134x.png ---
+--- needs --- math1201.idv[158] ==> math1201135x.png ---
+--- needs --- math1201.idv[159] ==> math1201136x.png ---
+--- needs --- math1201.idv[160] ==> math1201137x.png ---
+--- needs --- math1201.idv[161] ==> math1201138x.png ---
+--- needs --- math1201.idv[162] ==> math1201139x.png ---
+--- needs --- math1201.idv[163] ==> math1201140x.png ---
+--- needs --- math1201.idv[164] ==> math1201141x.png ---
+--- needs --- math1201.idv[165] ==> math1201142x.png ---
+--- needs --- math1201.idv[166] ==> math1201143x.png ---
+--- needs --- math1201.idv[167] ==> math1201144x.png ---
+--- needs --- math1201.idv[168] ==> math1201145x.png ---
+--- needs --- math1201.idv[169] ==> math1201146x.png ---
+--- needs --- math1201.idv[170] ==> math1201147x.png ---
+--- needs --- math1201.idv[172] ==> math1201148x.png ---
+--- needs --- math1201.idv[173] ==> math1201149x.png ---
+--- needs --- math1201.idv[174] ==> math1201150x.png ---
+--- needs --- math1201.idv[175] ==> math1201151x.png ---
+--- needs --- math1201.idv[176] ==> math1201152x.png ---
+--- needs --- math1201.idv[177] ==> math1201153x.png ---
+--- needs --- math1201.idv[178] ==> math1201154x.png ---
+--- needs --- math1201.idv[179] ==> math1201155x.png ---
+--- needs --- math1201.idv[180] ==> math1201156x.png ---
+--- needs --- math1201.idv[181] ==> math1201157x.png ---
+--- needs --- math1201.idv[182] ==> math1201158x.png ---
+--- needs --- math1201.idv[183] ==> math1201159x.png ---
+--- needs --- math1201.idv[184] ==> math1201160x.png ---
+--- needs --- math1201.idv[185] ==> math1201161x.png ---
+--- needs --- math1201.idv[186] ==> math1201162x.png ---
+--- needs --- math1201.idv[187] ==> math1201163x.png ---
+--- needs --- math1201.idv[188] ==> math1201164x.png ---
+--- needs --- math1201.idv[189] ==> math1201165x.png ---
+--- needs --- math1201.idv[190] ==> math1201166x.png ---
+--- needs --- math1201.idv[191] ==> math1201167x.png ---
+--- needs --- math1201.idv[192] ==> math1201168x.png ---
+--- needs --- math1201.idv[193] ==> math1201169x.png ---
+--- needs --- math1201.idv[194] ==> math1201170x.png ---
+--- needs --- math1201.idv[195] ==> math1201171x.png ---
+--- needs --- math1201.idv[196] ==> math1201172x.png ---
+--- needs --- math1201.idv[197] ==> math1201173x.png ---
+--- needs --- math1201.idv[198] ==> math1201174x.png ---
+--- needs --- math1201.idv[199] ==> math1201175x.png ---
+--- needs --- math1201.idv[200] ==> math1201176x.png ---
+--- needs --- math1201.idv[201] ==> math1201177x.png ---
+--- needs --- math1201.idv[202] ==> math1201178x.png ---
+--- needs --- math1201.idv[203] ==> math1201179x.png ---
+--- needs --- math1201.idv[204] ==> math1201180x.png ---
+--- needs --- math1201.idv[205] ==> math1201181x.png ---
+--- needs --- math1201.idv[206] ==> math1201182x.png ---
+--- needs --- math1201.idv[207] ==> math1201183x.png ---
+--- needs --- math1201.idv[208] ==> math1201184x.png ---
+--- needs --- math1201.idv[209] ==> math1201185x.png ---
+--- needs --- math1201.idv[210] ==> math1201186x.png ---
+--- needs --- math1201.idv[211] ==> math1201187x.png ---
+--- needs --- math1201.idv[212] ==> math1201188x.png ---
+--- needs --- math1201.idv[213] ==> math1201189x.png ---
+--- needs --- math1201.idv[214] ==> math1201190x.png ---
+--- needs --- math1201.idv[215] ==> math1201191x.png ---
+--- needs --- math1201.idv[216] ==> math1201192x.png ---
+--- needs --- math1201.idv[217] ==> math1201193x.png ---
+--- needs --- math1201.idv[218] ==> math1201194x.png ---
+--- needs --- math1201.idv[220] ==> math1201195x.png ---
+--- needs --- math1201.idv[221] ==> math1201196x.png ---
+--- needs --- math1201.idv[222] ==> math1201197x.png ---
+--- needs --- math1201.idv[223] ==> math1201198x.png ---
+--- needs --- math1201.idv[224] ==> math1201199x.png ---
+--- needs --- math1201.idv[225] ==> math1201200x.png ---
+--- needs --- math1201.idv[226] ==> math1201201x.png ---
+--- needs --- math1201.idv[227] ==> math1201202x.png ---
+--- needs --- math1201.idv[228] ==> math1201203x.png ---
+--- needs --- math1201.idv[229] ==> math1201204x.png ---
+--- needs --- math1201.idv[230] ==> math1201205x.png ---
+--- needs --- math1201.idv[231] ==> math1201206x.png ---
+--- needs --- math1201.idv[232] ==> math1201207x.png ---
+--- needs --- math1201.idv[233] ==> math1201208x.png ---
+--- needs --- math1201.idv[234] ==> math1201209x.png ---
+--- needs --- math1201.idv[235] ==> math1201210x.png ---
+--- needs --- math1201.idv[236] ==> math1201211x.png ---
+--- needs --- math1201.idv[237] ==> math1201212x.png ---
+--- needs --- math1201.idv[238] ==> math1201213x.png ---
+--- needs --- math1201.idv[239] ==> math1201214x.png ---
+--- needs --- math1201.idv[240] ==> math1201215x.png ---
+--- needs --- math1201.idv[241] ==> math1201216x.png ---
+--- needs --- math1201.idv[243] ==> math1201217x.png ---
+--- needs --- math1201.idv[244] ==> math1201218x.png ---
+--- needs --- math1201.idv[245] ==> math1201219x.png ---
+--- needs --- math1201.idv[246] ==> math1201220x.png ---
+--- needs --- math1201.idv[247] ==> math1201221x.png ---
+--- needs --- math1201.idv[248] ==> math1201222x.png ---
+--- needs --- math1201.idv[249] ==> math1201223x.png ---
+--- needs --- math1201.idv[250] ==> math1201224x.png ---
+--- needs --- math1201.idv[251] ==> math1201225x.png ---
+--- needs --- math1201.idv[252] ==> math1201226x.png ---
+--- needs --- math1201.idv[254] ==> math1201227x.png ---
+--- needs --- math1201.idv[255] ==> math1201228x.png ---
+--- needs --- math1201.idv[256] ==> math1201229x.png ---
+--- needs --- math1201.idv[257] ==> math1201230x.png ---
+--- needs --- math1201.idv[258] ==> math1201231x.png ---
+--- needs --- math1201.idv[259] ==> math1201232x.png ---
+--- needs --- math1201.idv[260] ==> math1201233x.png ---
+--- needs --- math1201.idv[261] ==> math1201234x.png ---
+--- needs --- math1201.idv[262] ==> math1201235x.png ---
+--- needs --- math1201.idv[263] ==> math1201236x.png ---
+--- needs --- math1201.idv[264] ==> math1201237x.png ---
+--- needs --- math1201.idv[266] ==> math1201238x.png ---
+--- needs --- math1201.idv[267] ==> math1201239x.png ---
+--- needs --- math1201.idv[268] ==> math1201240x.png ---
+--- needs --- math1201.idv[270] ==> math1201241x.png ---
+--- needs --- math1201.idv[271] ==> math1201242x.png ---
+--- needs --- math1201.idv[272] ==> math1201243x.png ---
+--- needs --- math1201.idv[273] ==> math1201244x.png ---
+--- needs --- math1201.idv[274] ==> math1201245x.png ---
+--- needs --- math1201.idv[275] ==> math1201246x.png ---
+--- needs --- math1201.idv[276] ==> math1201247x.png ---
+--- needs --- math1201.idv[277] ==> math1201248x.png ---
+--- needs --- math1201.idv[279] ==> math1201249x.png ---
+--- needs --- math1201.idv[280] ==> math1201250x.png ---
+--- needs --- math1201.idv[281] ==> math1201251x.png ---
+--- needs --- math1201.idv[282] ==> math1201252x.png ---
+--- needs --- math1201.idv[283] ==> math1201253x.png ---
+--- needs --- math1201.idv[284] ==> math1201254x.png ---
+--- needs --- math1201.idv[285] ==> math1201255x.png ---
+--- needs --- math1201.idv[286] ==> math1201256x.png ---
+--- needs --- math1201.idv[287] ==> math1201257x.png ---
+--- needs --- math1201.idv[288] ==> math1201258x.png ---
+--- needs --- math1201.idv[289] ==> math1201259x.png ---
+--- needs --- math1201.idv[290] ==> math1201260x.png ---
+--- needs --- math1201.idv[291] ==> math1201261x.png ---
+--- needs --- math1201.idv[292] ==> math1201262x.png ---
+--- needs --- math1201.idv[293] ==> math1201263x.png ---
+--- needs --- math1201.idv[295] ==> math1201264x.png ---
+--- needs --- math1201.idv[296] ==> math1201265x.png ---
+--- needs --- math1201.idv[297] ==> math1201266x.png ---
+--- needs --- math1201.idv[298] ==> math1201267x.png ---
+--- needs --- math1201.idv[299] ==> math1201268x.png ---
+--- needs --- math1201.idv[300] ==> math1201269x.png ---
+--- needs --- math1201.idv[301] ==> math1201270x.png ---
+--- needs --- math1201.idv[302] ==> math1201271x.png ---
+--- needs --- math1201.idv[303] ==> math1201272x.png ---
+--- needs --- math1201.idv[304] ==> math1201273x.png ---
+--- needs --- math1201.idv[305] ==> math1201274x.png ---
+--- needs --- math1201.idv[306] ==> math1201275x.png ---
+--- needs --- math1201.idv[307] ==> math1201276x.png ---
+--- needs --- math1201.idv[308] ==> math1201277x.png ---
+--- needs --- math1201.idv[310] ==> math1201278x.png ---
+--- needs --- math1201.idv[311] ==> math1201279x.png ---
+--- needs --- math1201.idv[312] ==> math1201280x.png ---
+--- needs --- math1201.idv[313] ==> math1201281x.png ---
+--- needs --- math1201.idv[315] ==> math1201282x.png ---
+--- needs --- math1201.idv[316] ==> math1201283x.png ---
+--- needs --- math1201.idv[317] ==> math1201284x.png ---
+--- needs --- math1201.idv[318] ==> math1201285x.png ---
+--- needs --- math1201.idv[319] ==> math1201286x.png ---
+--- needs --- math1201.idv[320] ==> math1201287x.png ---
+--- needs --- math1201.idv[321] ==> math1201288x.png ---
+--- needs --- math1201.idv[322] ==> math1201289x.png ---
+--- needs --- math1201.idv[323] ==> math1201290x.png ---
+--- needs --- math1201.idv[324] ==> math1201291x.png ---
+--- needs --- math1201.idv[325] ==> math1201292x.png ---
+--- needs --- math1201.idv[326] ==> math1201293x.png ---
+--- needs --- math1201.idv[327] ==> math1201294x.png ---
+--- needs --- math1201.idv[328] ==> math1201295x.png ---
+--- needs --- math1201.idv[329] ==> math1201296x.png ---
+--- needs --- math1201.idv[330] ==> math1201297x.png ---
+--- needs --- math1201.idv[331] ==> math1201298x.png ---
+--- needs --- math1201.idv[332] ==> math1201299x.png ---
+--- needs --- math1201.idv[334] ==> math1201300x.png ---
+--- needs --- math1201.idv[335] ==> math1201301x.png ---
+--- needs --- math1201.idv[336] ==> math1201302x.png ---
+--- needs --- math1201.idv[337] ==> math1201303x.png ---
+--- needs --- math1201.idv[338] ==> math1201304x.png ---
+--- needs --- math1201.idv[339] ==> math1201305x.png ---
+--- needs --- math1201.idv[340] ==> math1201306x.png ---
+--- needs --- math1201.idv[341] ==> math1201307x.png ---
+--- needs --- math1201.idv[342] ==> math1201308x.png ---
+--- needs --- math1201.idv[343] ==> math1201309x.png ---
+--- needs --- math1201.idv[344] ==> math1201310x.png ---
+--- needs --- math1201.idv[345] ==> math1201311x.png ---
+--- needs --- math1201.idv[346] ==> math1201312x.png ---
+--- needs --- math1201.idv[347] ==> math1201313x.png ---
+--- needs --- math1201.idv[348] ==> math1201314x.png ---
+--- needs --- math1201.idv[349] ==> math1201315x.png ---
+--- needs --- math1201.idv[350] ==> math1201316x.png ---
+--- needs --- math1201.idv[351] ==> math1201317x.png ---
+--- needs --- math1201.idv[352] ==> math1201318x.png ---
+--- needs --- math1201.idv[353] ==> math1201319x.png ---
+--- needs --- math1201.idv[354] ==> math1201320x.png ---
+--- needs --- math1201.idv[355] ==> math1201321x.png ---
+--- needs --- math1201.idv[356] ==> math1201322x.png ---
+--- needs --- math1201.idv[357] ==> math1201323x.png ---
+--- needs --- math1201.idv[358] ==> math1201324x.png ---
+--- needs --- math1201.idv[359] ==> math1201325x.png ---
+--- needs --- math1201.idv[360] ==> math1201326x.png ---
+--- needs --- math1201.idv[361] ==> math1201327x.png ---
+--- needs --- math1201.idv[362] ==> math1201328x.png ---
+--- needs --- math1201.idv[364] ==> math1201329x.png ---
+--- needs --- math1201.idv[365] ==> math1201330x.png ---
+--- needs --- math1201.idv[366] ==> math1201331x.png ---
+--- needs --- math1201.idv[367] ==> math1201332x.png ---
+--- needs --- math1201.idv[368] ==> math1201333x.png ---
+--- needs --- math1201.idv[369] ==> math1201334x.png ---
+--- needs --- math1201.idv[370] ==> math1201335x.png ---
+--- needs --- math1201.idv[371] ==> math1201336x.png ---
+--- needs --- math1201.idv[372] ==> math1201337x.png ---
+--- needs --- math1201.idv[373] ==> math1201338x.png ---
+--- needs --- math1201.idv[374] ==> math1201339x.png ---
+--- needs --- math1201.idv[375] ==> math1201340x.png ---
+--- needs --- math1201.idv[376] ==> math1201341x.png ---
+--- needs --- math1201.idv[377] ==> math1201342x.png ---
+--- needs --- math1201.idv[378] ==> math1201343x.png ---
+--- needs --- math1201.idv[379] ==> math1201344x.png ---
+--- needs --- math1201.idv[380] ==> math1201345x.png ---
+--- needs --- math1201.idv[381] ==> math1201346x.png ---
+--- needs --- math1201.idv[383] ==> math1201347x.png ---
+--- needs --- math1201.idv[384] ==> math1201348x.png ---
+--- needs --- math1201.idv[385] ==> math1201349x.png ---
+--- needs --- math1201.idv[386] ==> math1201350x.png ---
+--- needs --- math1201.idv[387] ==> math1201351x.png ---
+--- needs --- math1201.idv[388] ==> math1201352x.png ---
+--- needs --- math1201.idv[389] ==> math1201353x.png ---
+--- needs --- math1201.idv[390] ==> math1201354x.png ---
+--- needs --- math1201.idv[391] ==> math1201355x.png ---
+--- needs --- math1201.idv[393] ==> math1201356x.png ---
+--- needs --- math1201.idv[394] ==> math1201357x.png ---
+--- needs --- math1201.idv[395] ==> math1201358x.png ---
+--- needs --- math1201.idv[396] ==> math1201359x.png ---
+--- needs --- math1201.idv[397] ==> math1201360x.png ---
+--- needs --- math1201.idv[398] ==> math1201361x.png ---
+--- needs --- math1201.idv[399] ==> math1201362x.png ---
+--- needs --- math1201.idv[400] ==> math1201363x.png ---
+--- needs --- math1201.idv[401] ==> math1201364x.png ---
+--- needs --- math1201.idv[402] ==> math1201365x.png ---
+--- needs --- math1201.idv[403] ==> math1201366x.png ---
+--- needs --- math1201.idv[404] ==> math1201367x.png ---
+--- needs --- math1201.idv[405] ==> math1201368x.png ---
+--- needs --- math1201.idv[406] ==> math1201369x.png ---
+--- needs --- math1201.idv[407] ==> math1201370x.png ---
+--- needs --- math1201.idv[408] ==> math1201371x.png ---
+--- needs --- math1201.idv[409] ==> math1201372x.png ---
+--- needs --- math1201.idv[410] ==> math1201373x.png ---
+--- needs --- math1201.idv[411] ==> math1201374x.png ---
+--- needs --- math1201.idv[412] ==> math1201375x.png ---
+--- needs --- math1201.idv[413] ==> math1201376x.png ---
+--- needs --- math1201.idv[414] ==> math1201377x.png ---
+--- needs --- math1201.idv[415] ==> math1201378x.png ---
+--- needs --- math1201.idv[416] ==> math1201379x.png ---
+--- needs --- math1201.idv[417] ==> math1201380x.png ---
+--- needs --- math1201.idv[418] ==> math1201381x.png ---
+--- needs --- math1201.idv[419] ==> math1201382x.png ---
+--- needs --- math1201.idv[420] ==> math1201383x.png ---
+--- needs --- math1201.idv[421] ==> math1201384x.png ---
+--- needs --- math1201.idv[422] ==> math1201385x.png ---
+--- needs --- math1201.idv[423] ==> math1201386x.png ---
+--- needs --- math1201.idv[424] ==> math1201387x.png ---
+--- needs --- math1201.idv[426] ==> math1201388x.png ---
+--- needs --- math1201.idv[427] ==> math1201389x.png ---
+--- needs --- math1201.idv[428] ==> math1201390x.png ---
+--- needs --- math1201.idv[429] ==> math1201391x.png ---
+--- needs --- math1201.idv[430] ==> math1201392x.png ---
+--- needs --- math1201.idv[431] ==> math1201393x.png ---
+--- needs --- math1201.idv[432] ==> math1201394x.png ---
+--- needs --- math1201.idv[433] ==> math1201395x.png ---
+--- needs --- math1201.idv[434] ==> math1201396x.png ---
+--- needs --- math1201.idv[435] ==> math1201397x.png ---
+--- needs --- math1201.idv[436] ==> math1201398x.png ---
+--- needs --- math1201.idv[437] ==> math1201399x.png ---
+--- needs --- math1201.idv[438] ==> math1201400x.png ---
+--- needs --- math1201.idv[440] ==> math1201401x.png ---
+--- needs --- math1201.idv[442] ==> math1201402x.png ---
+--- needs --- math1201.idv[443] ==> math1201403x.png ---
+--- needs --- math1201.idv[444] ==> math1201404x.png ---
+--- needs --- math1201.idv[445] ==> math1201405x.png ---
+--- needs --- math1201.idv[446] ==> math1201406x.png ---
+--- needs --- math1201.idv[447] ==> math1201407x.png ---
+--- needs --- math1201.idv[448] ==> math1201408x.png ---
+--- needs --- math1201.idv[449] ==> math1201409x.png ---
+--- needs --- math1201.idv[450] ==> math1201410x.png ---
+--- needs --- math1201.idv[451] ==> math1201411x.png ---
+--- needs --- math1201.idv[452] ==> math1201412x.png ---
+--- needs --- math1201.idv[453] ==> math1201413x.png ---
+--- needs --- math1201.idv[454] ==> math1201414x.png ---
+--- needs --- math1201.idv[455] ==> math1201415x.png ---
+--- needs --- math1201.idv[456] ==> math1201416x.png ---
+--- needs --- math1201.idv[457] ==> math1201417x.png ---
+--- needs --- math1201.idv[458] ==> math1201418x.png ---
+--- needs --- math1201.idv[459] ==> math1201419x.png ---
+--- needs --- math1201.idv[461] ==> math1201420x.png ---
+--- needs --- math1201.idv[462] ==> math1201421x.png ---
+--- needs --- math1201.idv[463] ==> math1201422x.png ---
+--- needs --- math1201.idv[464] ==> math1201423x.png ---
+--- needs --- math1201.idv[465] ==> math1201424x.png ---
+--- needs --- math1201.idv[466] ==> math1201425x.png ---
+--- needs --- math1201.idv[467] ==> math1201426x.png ---
+--- needs --- math1201.idv[468] ==> math1201427x.png ---
+--- needs --- math1201.idv[469] ==> math1201428x.png ---
+--- needs --- math1201.idv[470] ==> math1201429x.png ---
+--- needs --- math1201.idv[471] ==> math1201430x.png ---
+--- needs --- math1201.idv[472] ==> math1201431x.png ---
+--- needs --- math1201.idv[473] ==> math1201432x.png ---
+--- needs --- math1201.idv[474] ==> math1201433x.png ---
+--- needs --- math1201.idv[475] ==> math1201434x.png ---
+--- needs --- math1201.idv[476] ==> math1201435x.png ---
+--- needs --- math1201.idv[477] ==> math1201436x.png ---
+--- needs --- math1201.idv[478] ==> math1201437x.png ---
+--- needs --- math1201.idv[479] ==> math1201438x.png ---
+--- needs --- math1201.idv[480] ==> math1201439x.png ---
+--- needs --- math1201.idv[481] ==> math1201440x.png ---
+--- needs --- math1201.idv[482] ==> math1201441x.png ---
+--- needs --- math1201.idv[483] ==> math1201442x.png ---
+--- needs --- math1201.idv[484] ==> math1201443x.png ---
+--- needs --- math1201.idv[485] ==> math1201444x.png ---
+--- needs --- math1201.idv[486] ==> math1201445x.png ---
+--- needs --- math1201.idv[487] ==> math1201446x.png ---
+--- needs --- math1201.idv[489] ==> math1201447x.png ---
+--- needs --- math1201.idv[490] ==> math1201448x.png ---
+--- needs --- math1201.idv[491] ==> math1201449x.png ---
+--- needs --- math1201.idv[492] ==> math1201450x.png ---
+--- needs --- math1201.idv[493] ==> math1201451x.png ---
+--- needs --- math1201.idv[494] ==> math1201452x.png ---
+--- needs --- math1201.idv[495] ==> math1201453x.png ---
+--- needs --- math1201.idv[496] ==> math1201454x.png ---
+--- needs --- math1201.idv[497] ==> math1201455x.png ---
+--- needs --- math1201.idv[498] ==> math1201456x.png ---
+--- needs --- math1201.idv[499] ==> math1201457x.png ---
+--- needs --- math1201.idv[500] ==> math1201458x.png ---
+--- needs --- math1201.idv[501] ==> math1201459x.png ---
+--- needs --- math1201.idv[502] ==> math1201460x.png ---
+--- needs --- math1201.idv[503] ==> math1201461x.png ---
+--- needs --- math1201.idv[504] ==> math1201462x.png ---
+--- needs --- math1201.idv[505] ==> math1201463x.png ---
+--- needs --- math1201.idv[507] ==> math1201464x.png ---
+--- needs --- math1201.idv[508] ==> math1201465x.png ---
+--- needs --- math1201.idv[509] ==> math1201466x.png ---
+--- needs --- math1201.idv[511] ==> math1201467x.png ---
+--- needs --- math1201.idv[512] ==> math1201468x.png ---
+--- needs --- math1201.idv[513] ==> math1201469x.png ---
+--- needs --- math1201.idv[515] ==> math1201470x.png ---
+--- needs --- math1201.idv[516] ==> math1201471x.png ---
+--- needs --- math1201.idv[518] ==> math1201472x.png ---
+--- needs --- math1201.idv[519] ==> math1201473x.png ---
+--- needs --- math1201.idv[520] ==> math1201474x.png ---
+--- needs --- math1201.idv[521] ==> math1201475x.png ---
+--- needs --- math1201.idv[522] ==> math1201476x.png ---
+--- needs --- math1201.idv[523] ==> math1201477x.png ---
+--- needs --- math1201.idv[524] ==> math1201478x.png ---
+--- needs --- math1201.idv[525] ==> math1201479x.png ---
+--- needs --- math1201.idv[526] ==> math1201480x.png ---
+--- needs --- math1201.idv[527] ==> math1201481x.png ---
+--- needs --- math1201.idv[528] ==> math1201482x.png ---
+--- needs --- math1201.idv[530] ==> math1201483x.png ---
+--- needs --- math1201.idv[531] ==> math1201484x.png ---
+--- needs --- math1201.idv[532] ==> math1201485x.png ---
+--- needs --- math1201.idv[533] ==> math1201486x.png ---
+--- needs --- math1201.idv[534] ==> math1201487x.png ---
+--- needs --- math1201.idv[535] ==> math1201488x.png ---
+--- needs --- math1201.idv[536] ==> math1201489x.png ---
+--- needs --- math1201.idv[537] ==> math1201490x.png ---
+--- needs --- math1201.idv[538] ==> math1201491x.png ---
+--- needs --- math1201.idv[539] ==> math1201492x.png ---
+--- needs --- math1201.idv[540] ==> math1201493x.png ---
+--- needs --- math1201.idv[541] ==> math1201494x.png ---
+--- needs --- math1201.idv[542] ==> math1201495x.png ---
+--- needs --- math1201.idv[543] ==> math1201496x.png ---
+--- needs --- math1201.idv[545] ==> math1201497x.png ---
+--- needs --- math1201.idv[547] ==> math1201498x.png ---
+--- needs --- math1201.idv[548] ==> math1201499x.png ---
+--- needs --- math1201.idv[549] ==> math1201500x.png ---
+--- needs --- math1201.idv[550] ==> math1201501x.png ---
+--- needs --- math1201.idv[551] ==> math1201502x.png ---
+--- needs --- math1201.idv[552] ==> math1201503x.png ---
+--- needs --- math1201.idv[553] ==> math1201504x.png ---
+--- needs --- math1201.idv[554] ==> math1201505x.png ---
+--- needs --- math1201.idv[555] ==> math1201506x.png ---
+--- needs --- math1201.idv[556] ==> math1201507x.png ---
+--- needs --- math1201.idv[558] ==> math1201508x.png ---
+--- needs --- math1201.idv[559] ==> math1201509x.png ---
+--- needs --- math1201.idv[560] ==> math1201510x.png ---
+--- needs --- math1201.idv[561] ==> math1201511x.png ---
+--- needs --- math1201.idv[562] ==> math1201512x.png ---
+--- needs --- math1201.idv[563] ==> math1201513x.png ---
+--- needs --- math1201.idv[564] ==> math1201514x.png ---
+--- needs --- math1201.idv[565] ==> math1201515x.png ---
+--- needs --- math1201.idv[566] ==> math1201516x.png ---
+--- needs --- math1201.idv[567] ==> math1201517x.png ---
+--- needs --- math1201.idv[568] ==> math1201518x.png ---
+--- needs --- math1201.idv[569] ==> math1201519x.png ---
+--- needs --- math1201.idv[570] ==> math1201520x.png ---
+--- needs --- math1201.idv[571] ==> math1201521x.png ---
+--- needs --- math1201.idv[573] ==> math1201522x.png ---
+--- needs --- math1201.idv[574] ==> math1201523x.png ---
+--- needs --- math1201.idv[575] ==> math1201524x.png ---
+--- needs --- math1201.idv[576] ==> math1201525x.png ---
+--- needs --- math1201.idv[577] ==> math1201526x.png ---
+--- needs --- math1201.idv[578] ==> math1201527x.png ---
+--- needs --- math1201.idv[579] ==> math1201528x.png ---
+--- needs --- math1201.idv[581] ==> math1201529x.png ---
+--- needs --- math1201.idv[582] ==> math1201530x.png ---
+--- needs --- math1201.idv[583] ==> math1201531x.png ---
+--- needs --- math1201.idv[584] ==> math1201532x.png ---
+--- needs --- math1201.idv[585] ==> math1201533x.png ---
+--- needs --- math1201.idv[586] ==> math1201534x.png ---
+--- needs --- math1201.idv[587] ==> math1201535x.png ---
+--- needs --- math1201.idv[589] ==> math1201536x.png ---
+--- needs --- math1201.idv[590] ==> math1201537x.png ---
+--- needs --- math1201.idv[591] ==> math1201538x.png ---
+--- needs --- math1201.idv[592] ==> math1201539x.png ---
+--- needs --- math1201.idv[593] ==> math1201540x.png ---
+--- needs --- math1201.idv[594] ==> math1201541x.png ---
+--- needs --- math1201.idv[595] ==> math1201542x.png ---
+--- needs --- math1201.idv[596] ==> math1201543x.png ---
+--- needs --- math1201.idv[597] ==> math1201544x.png ---
+--- needs --- math1201.idv[599] ==> math1201545x.png ---
+--- needs --- math1201.idv[600] ==> math1201546x.png ---
+--- needs --- math1201.idv[601] ==> math1201547x.png ---
+--- needs --- math1201.idv[602] ==> math1201548x.png ---
+--- needs --- math1201.idv[603] ==> math1201549x.png ---
+--- needs --- math1201.idv[604] ==> math1201550x.png ---
+--- needs --- math1201.idv[605] ==> math1201551x.png ---
+--- needs --- math1201.idv[606] ==> math1201552x.png ---
+--- needs --- math1201.idv[607] ==> math1201553x.png ---
+--- needs --- math1201.idv[608] ==> math1201554x.png ---
+--- needs --- math1201.idv[609] ==> math1201555x.png ---
+--- needs --- math1201.idv[610] ==> math1201556x.png ---
+--- needs --- math1201.idv[611] ==> math1201557x.png ---
+--- needs --- math1201.idv[612] ==> math1201558x.png ---
+--- needs --- math1201.idv[613] ==> math1201559x.png ---
+--- needs --- math1201.idv[614] ==> math1201560x.png ---
+--- needs --- math1201.idv[615] ==> math1201561x.png ---
+--- needs --- math1201.idv[616] ==> math1201562x.png ---
+--- needs --- math1201.idv[617] ==> math1201563x.png ---
+--- needs --- math1201.idv[618] ==> math1201564x.png ---
+--- needs --- math1201.idv[619] ==> math1201565x.png ---
+--- needs --- math1201.idv[620] ==> math1201566x.png ---
+--- needs --- math1201.idv[621] ==> math1201567x.png ---
+--- needs --- math1201.idv[622] ==> math1201568x.png ---
+--- needs --- math1201.idv[623] ==> math1201569x.png ---
+--- needs --- math1201.idv[624] ==> math1201570x.png ---
+--- needs --- math1201.idv[625] ==> math1201571x.png ---
+--- needs --- math1201.idv[626] ==> math1201572x.png ---
+--- needs --- math1201.idv[627] ==> math1201573x.png ---
+--- needs --- math1201.idv[628] ==> math1201574x.png ---
+--- needs --- math1201.idv[629] ==> math1201575x.png ---
+--- needs --- math1201.idv[630] ==> math1201576x.png ---
+--- needs --- math1201.idv[631] ==> math1201577x.png ---
+--- needs --- math1201.idv[632] ==> math1201578x.png ---
+--- needs --- math1201.idv[633] ==> math1201579x.png ---
+--- needs --- math1201.idv[634] ==> math1201580x.png ---
+--- needs --- math1201.idv[635] ==> math1201581x.png ---
+--- needs --- math1201.idv[636] ==> math1201582x.png ---
+--- needs --- math1201.idv[637] ==> math1201583x.png ---
+--- needs --- math1201.idv[638] ==> math1201584x.png ---
+--- needs --- math1201.idv[639] ==> math1201585x.png ---
+--- needs --- math1201.idv[640] ==> math1201586x.png ---
+--- needs --- math1201.idv[641] ==> math1201587x.png ---
+--- needs --- math1201.idv[642] ==> math1201588x.png ---
+--- needs --- math1201.idv[644] ==> math1201589x.png ---
+--- needs --- math1201.idv[646] ==> math1201590x.png ---
+--- needs --- math1201.idv[648] ==> math1201591x.png ---
+--- needs --- math1201.idv[649] ==> math1201592x.png ---
+--- needs --- math1201.idv[650] ==> math1201593x.png ---
+--- needs --- math1201.idv[651] ==> math1201594x.png ---
+--- needs --- math1201.idv[652] ==> math1201595x.png ---
+--- needs --- math1201.idv[653] ==> math1201596x.png ---
+--- needs --- math1201.idv[654] ==> math1201597x.png ---
+--- needs --- math1201.idv[655] ==> math1201598x.png ---
+--- needs --- math1201.idv[656] ==> math1201599x.png ---
+--- needs --- math1201.idv[657] ==> math1201600x.png ---
+--- needs --- math1201.idv[659] ==> math1201601x.png ---
+--- needs --- math1201.idv[660] ==> math1201602x.png ---
+--- needs --- math1201.idv[662] ==> math1201603x.png ---
+--- needs --- math1201.idv[663] ==> math1201604x.png ---
+--- needs --- math1201.idv[664] ==> math1201605x.png ---
+--- needs --- math1201.idv[665] ==> math1201606x.png ---
+--- needs --- math1201.idv[667] ==> math1201607x.png ---
+--- needs --- math1201.idv[668] ==> math1201608x.png ---
+--- needs --- math1201.idv[669] ==> math1201609x.png ---
+--- needs --- math1201.idv[670] ==> math1201610x.png ---
+--- needs --- math1201.idv[671] ==> math1201611x.png ---
+--- needs --- math1201.idv[672] ==> math1201612x.png ---
+--- needs --- math1201.idv[673] ==> math1201613x.png ---
+--- needs --- math1201.idv[674] ==> math1201614x.png ---
+--- needs --- math1201.idv[675] ==> math1201615x.png ---
+--- needs --- math1201.idv[677] ==> math1201616x.png ---
+--- needs --- math1201.idv[678] ==> math1201617x.png ---
+--- needs --- math1201.idv[679] ==> math1201618x.png ---
+--- needs --- math1201.idv[680] ==> math1201619x.png ---
+--- needs --- math1201.idv[681] ==> math1201620x.png ---
+--- needs --- math1201.idv[683] ==> math1201621x.png ---
+--- needs --- math1201.idv[684] ==> math1201622x.png ---
+--- needs --- math1201.idv[685] ==> math1201623x.png ---
+--- needs --- math1201.idv[686] ==> math1201624x.png ---
+--- needs --- math1201.idv[687] ==> math1201625x.png ---
+--- needs --- math1201.idv[689] ==> math1201626x.png ---
+--- needs --- math1201.idv[690] ==> math1201627x.png ---
+--- needs --- math1201.idv[691] ==> math1201628x.png ---
+--- needs --- math1201.idv[692] ==> math1201629x.png ---
+--- needs --- math1201.idv[694] ==> math1201630x.png ---
+--- needs --- math1201.idv[695] ==> math1201631x.png ---
+--- needs --- math1201.idv[696] ==> math1201632x.png ---
+--- needs --- math1201.idv[697] ==> math1201633x.png ---
+--- needs --- math1201.idv[698] ==> math1201634x.png ---
+--- needs --- math1201.idv[699] ==> math1201635x.png ---
+--- needs --- math1201.idv[700] ==> math1201636x.png ---
+--- needs --- math1201.idv[701] ==> math1201637x.png ---
+--- needs --- math1201.idv[703] ==> math1201638x.png ---
+--- needs --- math1201.idv[704] ==> math1201639x.png ---
+--- needs --- math1201.idv[705] ==> math1201640x.png ---
+--- needs --- math1201.idv[706] ==> math1201641x.png ---
+--- needs --- math1201.idv[707] ==> math1201642x.png ---
+--- needs --- math1201.idv[708] ==> math1201643x.png ---
+--- needs --- math1201.idv[709] ==> math1201644x.png ---
+--- needs --- math1201.idv[710] ==> math1201645x.png ---
+--- needs --- math1201.idv[711] ==> math1201646x.png ---
+--- needs --- math1201.idv[713] ==> math1201647x.png ---
+--- needs --- math1201.idv[714] ==> math1201648x.png ---
+--- needs --- math1201.idv[715] ==> math1201649x.png ---
+--- needs --- math1201.idv[717] ==> math1201650x.png ---
+--- needs --- math1201.idv[718] ==> math1201651x.png ---
+--- needs --- math1201.idv[719] ==> math1201652x.png ---
+--- needs --- math1201.idv[720] ==> math1201653x.png ---
+--- needs --- math1201.idv[721] ==> math1201654x.png ---
+--- needs --- math1201.idv[722] ==> math1201655x.png ---
+--- needs --- math1201.idv[724] ==> math1201656x.png ---
+--- needs --- math1201.idv[725] ==> math1201657x.png ---
+--- needs --- math1201.idv[726] ==> math1201658x.png ---
+--- needs --- math1201.idv[727] ==> math1201659x.png ---
+--- needs --- math1201.idv[728] ==> math1201660x.png ---
+--- needs --- math1201.idv[730] ==> math1201661x.png ---
+--- needs --- math1201.idv[731] ==> math1201662x.png ---
+--- needs --- math1201.idv[732] ==> math1201663x.png ---
+--- needs --- math1201.idv[733] ==> math1201664x.png ---
+--- needs --- math1201.idv[735] ==> math1201665x.png ---
+--- needs --- math1201.idv[736] ==> math1201666x.png ---
+--- needs --- math1201.idv[737] ==> math1201667x.png ---
+--- needs --- math1201.idv[738] ==> math1201668x.png ---
+--- needs --- math1201.idv[739] ==> math1201669x.png ---
+--- needs --- math1201.idv[740] ==> math1201670x.png ---
+--- needs --- math1201.idv[741] ==> math1201671x.png ---
+--- needs --- math1201.idv[742] ==> math1201672x.png ---
+--- needs --- math1201.idv[744] ==> math1201673x.png ---
+--- needs --- math1201.idv[745] ==> math1201674x.png ---
+--- needs --- math1201.idv[746] ==> math1201675x.png ---
+--- needs --- math1201.idv[748] ==> math1201676x.png ---
+--- needs --- math1201.idv[749] ==> math1201677x.png ---
+--- needs --- math1201.idv[750] ==> math1201678x.png ---
+--- needs --- math1201.idv[752] ==> math1201679x.png ---
+--- characters ---
+Font("cmr","12","12","100")
+Font("cmr","17","17","120")
+Font("cmr","12","12","120")
+Font("cmbx","12","12","100")
+Font("cmti","12","12","100")
+Font("cmr","8","8","100")
+Font("cmr","6","6","100")
+Font("cmmi","12","12","100")
+Font("cmmi","8","8","100")
+Font("cmmi","6","6","100")
+Font("cmsy","10","10","120")
+--- needs --- math1201.idv[754] ==> opqr0c32.png ---
+Font("cmsy","8","8","100")
+Font("cmex","10","10","120")
+Font("msam","10","10","120")
+Font("msbm","10","10","120")
+--- needs --- math1201.idv[755] ==> oc0o0c52.png ---
+Font("cmtt","12","12","100")
+Font("cmbxti","10","10","120")
+Font("cmsl","12","12","100")
+Font("cmitt","10","10","120")
+Font("cmti","8","8","100")

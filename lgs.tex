@@ -1,0 +1,111 @@
+\[ a_1 x_1 + a_2 x_2 + a_3 x_3 + ... + a_n x_n = b \] heißt \emph{lineare Gleichung} \\
+\begin{tabular} {ll}
+$x_i$ & Variablen \\
+$a_i$ & Koeffizienten \\
+$b$ & absolut gleich
+\end{tabular}\\
+$x_i$ sind stets linear (1. Potenz)
+
+\section{Allgemeines Gleichungssystem}
+\[ a_{11} x_1 + a_{12} x_2 + \ldots + a_{1n} x_n = b_1 \]
+\[ a_{21} x_1 + a_{22} x_2 + \ldots + a_{2n} x_n = b_2 \]
+\[ \vdots \]
+\[ a_{m1} x_1 + a_{m2} x_2 + \ldots + a_{mn} x_n = b_n \]
+$n$ Unbekannte \\
+$m$ Gleichungen \\
+$a_{ij}$ heißen \emph{Koeffizienten}
+
+\section{Koeffizientenmatrix}
+\[ \left( \begin{array}{ccccc|c}
+a_{11} & a_{22} & a_{33} & \ldots & a_{1n} & b_1 \\
+a_{21} & a_{22} & a_{23} & \ldots & a_{2n} & b_2 \\
+			 &				&				 & \vdots & 			 & 	\vdots \\
+a_{m1} & a_{m2} & a_{m3} & \ldots & a_{mn} & b_n
+\end{array}\right) \]
+wobei $a_{1j}$ die Koeffizienten der Unbekannten in der ersten Gleichung sind, $a_{2j}$ die Koeffizienten in der zweiten Gleichung usw.
+
+\section{Gauß-Verfahren}
+Das Gauß-Verfahren dient zur Überführung einer Matrix in Zeilenstufenform, sodass das zugehörige LGS einfach zu lösen \begin{bsp}
+\begin{align*}
+\left( \begin{array}{ccc|c}
+1 & 2 & 3 & 7 \\
+0 & 4 & 0 & 6 \\
+0 & -4 & -3 & -7 \\
+\end{array}\right) \\
+\left( \begin{array}{ccc|c}
+1 & 2 & 3 & 7 \\
+0 & 4 & 0 & 6 \\
+0 & 0 & -3 & -1 \\
+\end{array}\right) \\
+\end{align*}
+Diese Matrix ist in Zeilenstufenform, da sich unterhalb der Hauptdiagonalen (1, 4, -3) nur Einträge = 0 befinden. Das Gleichungssystem ist nun einfach zu lösen. \\
+\end{bsp}
+
+Erlaubte Umformungen im Gauß-Verfahren: \\
+\begin{itemize}
+	\item Zeilen komplett vertauschen. ($\stackrel{I \leftrightarrow III}{\longrightarrow}$)
+	\item Multiplikation einer Gleichung mit einer Zahl verschieden von Null. ($\stackrel{I \cdot \lambda}{\longrightarrow}$)
+	\item Addition von zwei Gleichungen. ($\stackrel{I + III}{\longrightarrow}$)
+\end{itemize}
+
+\subsection{Verschiedene Fälle}
+An drei Beispielen:
+
+\begin{bsp}
+$\left( \begin{array}{cc|c}
+2 & -1 & 1 \\
+0 & 4 & 1
+\end{array} \right)$
+eindeutig lösbar
+\end{bsp}
+
+\begin{bsp}
+$\left( \begin{array}{ccc|c}
+1 & -2 & -4 & 2 \\
+0 & 3 & 2 & 0 \\
+0 & 0 & 0 & -1
+\end{array} \right)$
+nicht lösbar ($-1 \neq 0$)
+\end{bsp}
+
+\begin{bsp}
+$\left( \begin{array}{ccc|c}
+2 & -1 & 1 & 2 \\
+0 & 2 & -6 & 0 \\
+0 & 0 & 0 & 0
+\end{array} \right)$\\
+unendlich viele Lösungen (zwei linear abhängige Zeilen)\\
+\begin{align*}
+\mathbb{L} = \{ (1 - r | 3r | r)|r \in \mathbb{R} \}
+\end{align*}
+wobei $r$ \emph{Lösungsparameter} genannt wird.
+\end{bsp}
+
+\section{LGS mit Parameter (Schar von LGS)}
+\[
+\begin{array}{l}
+	x_1 + x_2 - 2x_3 = 0 \\
+	2x_1 - 2x_2 + 3x_3 = 1 + 2t \\
+	x_1 - x_2 - x_3 = t
+\end{array}
+\]
+$t$ heißt \emph{Scharparameter} $\rightarrow$ unendlich viele lineare Gleichungssysteme\\
+\textbf{Wichtig:} Beim Lösen eines solchen Systems müssen unter Umständen Fallunterscheidungen gemacht werden! (Nicht durch Null teilen!)
+
+\section{Erweitertes Gauß-Verfahren}
+Beim erweiterten Gauß-Verfahren versuchen wir, die Matrix nicht nur in Zeilenstufenform zu bringen, sondern sie zur \textit{Einheitsmatrix} umzuformen. \\
+Wir müssen die Matrix also so umformen, dass alle Einträge Null sind, außer diejenigen auf der Diagonalen und diese sind gleich 1.\\
+
+Beispiel für ein 3x3 System nach dem erweiterten Gauß-Verfahren:
+\begin{bsp}
+$\left( \begin{array}{ccc|c}
+1 & 0 & 0 & b_1 \\
+0 & 1 & 0 & b_2 \\
+0 & 0 & 1 & b_3
+\end{array} \right)$\\
+
+Die Lösungen lassen sich nun ganz einfach ablesen:\\
+$x_1 = b_1$ \\
+$x_2 = b_2$ \\
+$x_3 = b_3$
+\end{bsp}
